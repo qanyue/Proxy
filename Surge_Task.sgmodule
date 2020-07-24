@@ -26,15 +26,15 @@ Tasks：滴滴领取福利金 = type=cron, cronxp=55 59 23 * * *,script-path=htt
 # 顺丰速运
 Tasks：东东农场 = type=cron, cronxp=55 0 0 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_fruit.js
 # 奈雪的茶
-Tasks：奈雪的茶 = type=cron, cronxp=0 1 0 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_fruit.js
+Tasks：奈雪的茶 = type=cron, cronxp=0 1 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
 # 京东系列
 Tasks：
-Tasks：东东萌宠 = type=cron, cronxp=0 0 8,12,18 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_fruit.js
-Tasks：天天加速 = type=cron, cronxp=0 2 */3 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_fruit.js
-Tasks：宠汪汪 = type=cron, cronxp=0 3 */3 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_fruit.js
-Tasks：摇钱树 = type=cron, cronxp=0 6 */4 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_fruit.js
+Tasks：东东萌宠 = type=cron, cronxp=0 0 8,12,18 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_pet.js
+Tasks：天天加速 = type=cron, cronxp=0 2 */3 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_speed.js
+Tasks：宠汪汪 = type=cron, cronxp=0 3 */3 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_joy.js
+Tasks：摇钱树 = type=cron, cronxp=0 6 */4 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_moneyTree.js
 Tasks：东东农场 = type=cron, cronxp=0 7 6-18/6 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_fruit.js
-Tasks：种豆得豆 = type=cron, cronxp=0 9 0,7-19/2 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_fruit.js
+Tasks：种豆得豆 = type=cron, cronxp=0 9 0,7-19/2 * * *,script-path=https://github.com/chiupam/Scripts/blob/master/jd_plantBean.js
 # 联通签到
 Tasks：联通签到 = type=cron, cronxp=0 0 22 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js
 # 电信签到
