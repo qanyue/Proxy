@@ -1,0 +1,44 @@
+# 知乎
+^https?+:\/\/www\.zhihu\.com\/question url request-header (\r\n)User-Agent:.+ request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15
+# 淘宝
+^https?+:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_\.\w{3,4}+$ url reject-200
+^https?+:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$ url reject-200
+^https?+:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$ url reject-200
+# CSDN
+^https?+:\/\/gw\.csdn\.net\/cms-app\/v2\/home_page\/open_advertisement url reject-200
+# 高德地图
+^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ url reject-200
+# 斗鱼
+^https?+:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo url reject-200
+# Youtube
+^https?+:\/\/.+?\.googlevideo\.com\/.+?(?>&oad|ctier) url reject-200
+^https?+:\/\/\w+?\.youtube\.com\/api\/.+?ad url reject-200
+^https?+:\/\/\w+?\.youtube\.com\/p(?>agead|tracking) url reject-200
+^https?+:\/\/youtubei\.googleapis\.com\/youtubei\/.+?(?>ad|log)_ url reject-200
+# 京东
+^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ url reject-200
+^https?+:\/\/b?dsp-x\.jd\.com\/adx\/ url reject-200
+^https?+:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo url reject-200
+^https?+:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject-200
+# 美团
+^https?+:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ url reject-200
+^https?+:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+?\.jpg url reject-200
+^https?+:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+?\.jpg\?may_covertWebp url reject-200
+^https?+:\/\/s3plus\.meituan\.net\/.+?\/linglong\/.+?\.(?>gif|jpg|mp4) url reject-200
+# 微信
+^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad) url reject-200
+# 新浪微博
+^https?+:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(?>action|sdk)ad\.php url reject-200
+^https?+:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject-200
+^https?+:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject-200
+# 知乎
+^https?+:\/\/api\.zhihu\.com\/(?>launch|real_time) url reject-200
+^https?+:\/\/api\.zhihu\.com\/commercial_api\/(?>launch|real_time) url reject-200
+^https?+:\/\/api\.zhihu\.com\/fringe\/ad url reject-200
+^https?+:\/\/api\.zhihu\.com\/(?>ab|adx|xen|drama|zst|ad-style-service|market\/popover|search\/(?>top|tab|preset)|.*?(?>guide|recommendations|extended|featured-comment-ad)) url reject-200
+^https?+:\/\/www\.zhihu\.com\/api\/v4\/cmmunity-ad url reject-200
+# 中国联通
+^https?+:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm url reject-200
+^https?+:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd url reject-200
+
+hostname = s.youtube.com, www.youtube.com, www.youtube.com, api.zhihu.com, www.zhihu.com, guide-acs.m.taobao.com, acs.m.taobao.com, gw.csdn.net, m*.amap.com, rtbapi.douyucdn.cn, api.m.jd.com, ms.jr.jd.com, *.meituan.net, mp.weixin.qq.com, *.uve.weibo.com, api.weibo.cn, m.client.10010.com,
