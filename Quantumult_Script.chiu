@@ -41,4 +41,4 @@
 ^https?+:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm url reject-200
 ^https?+:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd url reject-200
 
-hostname = s.youtube.com, www.youtube.com, www.youtube.com, api.zhihu.com, www.zhihu.com, guide-acs.m.taobao.com, acs.m.taobao.com, gw.csdn.net, m*.amap.com, rtbapi.douyucdn.cn, api.m.jd.com, ms.jr.jd.com, *.meituan.net, mp.weixin.qq.com, *.uve.weibo.com, api.weibo.cn, m.client.10010.com,
+hostname = *.googlevideo.com, s.youtube.com, www.youtube.com, www.youtube.com, api.zhihu.com, www.zhihu.com, guide-acs.m.taobao.com, acs.m.taobao.com, gw.csdn.net, m*.amap.com, rtbapi.douyucdn.cn, api.m.jd.com, ms.jr.jd.com, *.meituan.net, mp.weixin.qq.com, *.uve.weibo.com, api.weibo.cn, m.client.10010.com
