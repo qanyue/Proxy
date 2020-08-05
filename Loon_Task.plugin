@@ -53,8 +53,8 @@ cron "30 9 * * MON" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/
 cron "0 7 1 * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/psn.js,tag=PSN会免
 
 # 临时项目放此栏目下 ######################
-# 疫情日报
 cron "30 58 8-23/3 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/nCov.js,tag=疫情日报
+cron "1 0-18/6 * * *" script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_818.js,tag=京东818
 
 # Rewrite ###############################
 # CSDN
