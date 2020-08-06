@@ -4,7 +4,7 @@
 cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js,tag=百度贴吧
 # 京东
 cron "30 0 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,tag=京东京豆
-cron "30 58 23 * * *" script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_unsubscribe.js,tag=取消关注
+cron "30 58 23 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_unsubscribe.js,tag=取消关注
 # 微博 & 微博钱包
 cron "0 1 0 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,tag=微博
 # 美团
