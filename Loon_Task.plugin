@@ -71,7 +71,7 @@ http-response ^https:\/\/user-api-prd-mx\.wandafilm\.com tag=万达电影, scrip
 # http-response 匹配正则表达式 requires-body=1,script-path=脚本远程链接,tag=脚本名称
 
 [Mitm]
-hostname = mwegame.qq.com, *.csdn.net, webapi.qmai.cn
+hostname = mwegame.qq.com, *.csdn.net, webapi.qmai.cn, user-api-prd-mx.wandafilm.com
 
 [Rule]
 domain, rsshub.app, proxy
