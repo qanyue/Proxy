@@ -1,7 +1,3 @@
-# cron "cron表达式" script-path=脚本远程链接,tag=脚本名称
-# http-request 匹配正则表达式 tag=脚本名称, script-path=脚本远程链接
-# http-response 匹配正则表达式 requires-body=1,script-path=脚本远程链接,tag=脚本名称
-
 [Script]
 # Task #################################
 # 百度贴吧
@@ -12,32 +8,32 @@ cron "30 58 23 * * *" script-path=https://gitee.com/lxk0301/scripts/raw/master/j
 # 微博 & 微博钱包
 cron "0 1 0 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,tag=微博
 # 美团
-cron "30 1 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,tag=美团
+cron "10 1 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,tag=美团
 # 饿了么
-cron "0 2 0 * * *" script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,tag=饿了么
-cron "0 2 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js, tag=饿了么
+cron "20 1 0 * * *" script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,tag=饿了么
+cron "20 1 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js, tag=饿了么
 # 旅行
-cron "30 2 0 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip.js,tag=携程
+cron "30 1 0 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip.js,tag=携程
 # CSDN
-cron "0 3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.js,tag=CSDN
+cron "40 1 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.js,tag=CSDN
 # 网易云音乐
-cron "30 3 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,tag=网易云音乐
+cron "50 1 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,tag=网易云音乐
 # 掌上飞车
-cron "00 4 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js,tag=掌上飞车
+cron "0 0 2 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js,tag=掌上飞车
 # 滴滴出行
-cron "30 4 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js,tag=滴滴出行
+cron "10 2 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js,tag=滴滴出行
 cron "30 59 23 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_reward.js,tag=滴滴福利金
 # 顺丰速运
-cron "00 5 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js,tag=顺丰
+cron "20 2 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js,tag=顺丰
 # 奈雪
-cron "30 5 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js,tag=奈雪的茶
+cron "30 2 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js,tag=奈雪的茶
 
 # 京东游戏 #############################
 cron "0 0 8,12,18 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_pet.js,tag=东东萌宠
-cron "0 6 */3 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_speed.js,tag=天天加速
-cron "0 9 */3 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy.js,tag=宠汪汪
+cron "0 5 */3 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_speed.js,tag=天天加速
+cron "30 8 */3 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy.js,tag=宠汪汪
 cron "0 12 */4 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_moneyTree.js,tag=摇钱树
-cron "0 15 6-18/6 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_fruit.js,tag=东东农场
+cron "30 15 6-18/6 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_fruit.js,tag=东东农场
 cron "0 30 0,7-21/2 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_plantBean.js,tag=种豆得豆
 
 # 监控 #################################
@@ -64,6 +60,11 @@ http-request ^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\? 
 http-request ^https:\/\/mwegame\.qq\.com\/ams\/sign\/doSign\/month tag=掌上飞车, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js
 # 奈雪的茶
 http-request ^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene tag=奈雪的茶, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
+
+# example ################################
+# cron "cron表达式" script-path=脚本远程链接,tag=脚本名称
+# http-request 匹配正则表达式 tag=脚本名称, script-path=脚本远程链接
+# http-response 匹配正则表达式 requires-body=1,script-path=脚本远程链接,tag=脚本名称
 
 [Mitm]
 hostname = mwegame.qq.com, *.csdn.net, webapi.qmai.cn
