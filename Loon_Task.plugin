@@ -1,5 +1,5 @@
 [Script]
-# Task #################################
+# Task ################################
 # 百度贴吧
 cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js,tag=百度贴吧
 # 京东
@@ -44,15 +44,15 @@ cron "0 0 9 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts
 cron "0 0 22 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js,tag=联通签到
 cron "30 0 22 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js,tag=电信签到
 
-# 游戏 ##################################
+# 游戏 #################################
 cron "30 9 * * MON" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/epic.js,tag=Epic周免
 cron "0 7 1 * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/psn.js,tag=PSN会免
 
-# 临时项目放此栏目下 ######################
+# 临时项目放此栏目下 #####################
 cron "30 58 8-23/3 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/nCov.js,tag=疫情日报
 cron "1 0-18/6 * * *" script-path=https://gitee.com/lxk0301/scripts/raw/master/jd_818.js,tag=京东818
 
-# Rewrite ###############################
+# Rewrite #############################
 # CSDN
 http-request ^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshToken tag=CSDN, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js
 http-request ^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\? tag=CSDN, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js
@@ -61,7 +61,7 @@ http-request ^https:\/\/mwegame\.qq\.com\/ams\/sign\/doSign\/month tag=掌上飞
 # 奈雪的茶
 http-request ^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene tag=奈雪的茶, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
 
-# example ################################
+# example #############################
 # cron "cron表达式" script-path=脚本远程链接,tag=脚本名称
 # http-request 匹配正则表达式 tag=脚本名称, script-path=脚本远程链接
 # http-response 匹配正则表达式 requires-body=1,script-path=脚本远程链接,tag=脚本名称
