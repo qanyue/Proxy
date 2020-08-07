@@ -43,4 +43,4 @@ http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path=https
 ^https?+:\/\/gw\.csdn\.net\/cms-app\/v2\/home_page\/open_advertisement - reject-200
 
 [Mitm]
-hostname = weibointl.api.weibo.cn, *.uve.weibo.com, api.weibo.cn, trade-acs.m.taobao.com, api.m.jd.com, mp.weixin.qq.com, api.zhihu.com, youtubei.googleapis.com, s.youtube.com, www.youtube.com, gw.csdn.net, www.zhihu.com
+hostname = weibointl.api.weibo.cn, *.uve.weibo.com, api.weibo.cn, trade-acs.m.taobao.com, api.m.jd.com, mp.weixin.qq.com, api.zhihu.com, *.googlevideo.com, youtubei.googleapis.com, s.youtube.com, www.youtube.com, gw.csdn.net, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198
