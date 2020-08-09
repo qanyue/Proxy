@@ -1,6 +1,5 @@
 /*
 搬运自 @yichahucha jd_price.js (https://github.com/yichahucha/surge/blob/master/jd_price.js)
-注意事项:不生效或失效的需要卸载 tb 重装，另外不开脚本进 tb 会令比价脚本失效
 
 Quantumult X
 [rewrite_local]
