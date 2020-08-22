@@ -1,8 +1,3 @@
-var caiyun_api = "wj3Dk4g72SMF6kdK";  //彩云天气API
-var tencent_api = "WOPBZ-NLJCX-NST4X-ZJHV3-7TUWH-2SBSU";  //腾讯地图API
-var location_latitude = "24.845590";  //纬度
-var locationn_longitude = "102.823672";  //经度
-
 /********************** SCRIPT START *********************************/
 const $ = API("caiyun");
 const ERR = MYERR();
