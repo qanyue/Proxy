@@ -12,3 +12,5 @@ Rewrite/ihle1 搬运自 NobyDa的[Rewrite_lhie1.conf](https://github.com/NobyDa/
 
 
 ##
+
+test
