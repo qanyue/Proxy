@@ -1,4 +1,4 @@
-[Plugin]
+[Script]
 # CSDN
 http-request ^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshToken tag=CSDN, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js
 http-request ^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\? tag=CSDN, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js
