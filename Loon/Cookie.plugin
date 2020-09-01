@@ -68,7 +68,6 @@ http-request ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=htt
 # 格式
 # http-request https script-path=path,tag = requestScript,enable=true
 # http-response https script-path=path,timeout=10,requires-body = true,tag = responseScript,enable=true
-# cron "123456" script-path=cron,tag = responseScript,enable=true
 
 
 [MITM]
