@@ -2,30 +2,21 @@
 
 注意事项:不生效或失效的需要卸载 tb 重装，另外不开脚本进 tb 会令比价脚本失效
 
-Quantumult X
-[rewrite_local]
-^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price.js
-^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price.js
-[mitm]
+type = http-request 
+
+tegex = ^http://.+/amdc/mobileDispatch
+
+script-path = https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price.js
+
+type = http-response 
+
+regex = ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail
+
+script-path = https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price.js
+
 hostname = trade-acs.m.taobao.com
 
-Surge 4.0
-[Script]
-http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price.js
-http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price.js
-[MITM]
-hostname = trade-acs.m.taobao.com
 
-Loon
-[Script]
-http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price.js
-http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price.js
-[MITM]
-hostname = trade-acs.m.taobao.com
-
- */
-
-/*
 README：https://github.com/yichahucha/surge/tree/master
  */
 

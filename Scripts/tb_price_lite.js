@@ -1,29 +1,25 @@
-/* 搬运自 @yichahucha jd_price.js (https://github.com/yichahucha/surge/blob/master/tb_price_lite.js)
+ /* 搬运自 @yichahucha jd_price.js (https://github.com/yichahucha/surge/blob/master/tb_price.js)
 
 注意事项:不生效或失效的需要卸载 tb 重装，另外不开脚本进 tb 会令比价脚本失效
 
-Quantumult X
-[rewrite_local]
-^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price_lite.js
-^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price_lite.js
-[mitm]
+type = http-request 
+
+tegex = ^http://.+/amdc/mobileDispatch
+
+script-path = https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price_lite.js
+
+type = http-response 
+
+regex = ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail
+
+script-path = https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price_lite.js
+
 hostname = trade-acs.m.taobao.com
 
-Surge 4.0
-[Script]
-http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price_lite.js
-http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price_lite.js
-[MITM]
-hostname = trade-acs.m.taobao.com
 
-Loon
-[Script]
-http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price_lite.js
-http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price_lite.js
-[MITM]
-hostname = trade-acs.m.taobao.com
-
+README：https://github.com/yichahucha/surge/tree/master
  */
+
 
 const $tool = new Tool()
 const consoleLog = false

@@ -1,23 +1,14 @@
 /*
 搬运自 @yichahucha jd_price_lite.js (https://github.com/yichahucha/surge/blob/master/jd_price_lite_lite.js)
 
-Quantumult X
-[rewrite_local]
-^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/jd_price_lite.js
-[mitm]
+typr = http-response 
+
+regex = ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig)
+
+path = https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/jd_price_lite.js
+
 hostname = api.m.jd.com
 
-Surge 4.0
-[Script]
-http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/jd_price_lite.js
-[MITM]
-hostname = api.m.jd.com
-
-Loon
-[Script]
-http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/jd_price_lite.js
-[MITM]
-hostname = api.m.jd.com
  */
 
 
