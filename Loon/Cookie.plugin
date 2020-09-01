@@ -1,10 +1,44 @@
 [Script]
-# CSDN
-http-request ^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshToken tag=CSDN, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js
-http-request ^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\? tag=CSDN, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js
+
+
+# 百度贴吧
+http-request ^https?:\/\/tieba\.baidu\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js,tag = 百度贴吧,enable=true
+
+
+# 京东
+http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean tag=京东, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+
+# 微博 & 微博钱包
+http-request https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,tag = 微博,enable=true
+
+
+http-request https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\? script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,tag = 微博,enable=true
+
+
+# 美团
+http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js,tag = 美团,enable=true
+
 # 掌上飞车
-http-request ^https:\/\/mwegame\.qq\.com\/ams\/sign\/doSign\/month tag=掌上飞车, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js
+http-request ^https:\/\/mwegame\.qq\.com\/ams\/sign\/doSign\/month tag=掌上飞车, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js,tag = 掌上飞车,enable=true
+
+
 # 奈雪的茶
-http-request ^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene tag=奈雪的茶, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
+http-request ^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene tag=奈雪的茶, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js,tag = 奈雪的茶,enable=true
+
+
 # 万达电影
-http-response ^https:\/\/user-api-prd-mx\.wandafilm\.com tag=万达电影, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.cookie.js
+http-response ^https:\/\/user-api-prd-mx\.wandafilm\.com tag=万达电影, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.cookie.js,tag = 万达电影,enable=true
+
+
+# 格式
+# http-request https script-path=path,tag = requestScript,enable=true
+# http-response https script-path=path,timeout=10,requires-body = true,tag = responseScript,enable=true
+# cron "123456" script-path=cron,tag = responseScript,enable=true
+
+[MITM]
+hostname = tieba.baidu.com,api.m.jd.com,pi.weibo.cn, pay.sc.weibo.com
+
+# 百度贴吧 === tieba.baidu.com
+# 京东 === api.m.jd.com
+# 微博 === pi.weibo.cn, pay.sc.weibo.com
