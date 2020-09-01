@@ -1,7 +1,7 @@
 [Script]
 http-request https:\/\/((weather-data\.apple)|(api.weather))\.com script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false,tag=彩云天气
 
-cron "58 59 7-21/2 * * *" script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/caiyun.js,tag=彩云天气
+cron "58 59 7-21/2 * * *" script-path=https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/caiyun.js,tag=彩云天气
 
 [MITM]
 hostname=weather-data.apple.com, api.weather.com
