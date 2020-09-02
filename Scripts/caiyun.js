@@ -229,7 +229,7 @@ function realtimeWeather() {
   }
 
   $.notify(
-    `${address.city}${address.district}  气温${realtime.apparent_temperature}℃  体感${realtime.temperature}℃  湿度${(realtime.humidity * 100).toFixed(0)}%`,
+    `${address.city}${address.district}  气温${realtime.apparent_temperature}℃  体感${realtime.temperature}℃  湿度${(realtime.humidity * 100).toFixed(0)}\%`,
     `风力${mapWind(realtime.wind.direction)}  空气质量${realtime.air_quality.description.chn}  紫外线${realtime.life_index.ultraviolet.desc}`,
     `${keypoint}~
 
