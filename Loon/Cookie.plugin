@@ -71,20 +71,20 @@ http-request ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=htt
 
 
 [MITM]
-hostname = tieba.baidu.com,api.m.jd.com,pi.weibo.cn, pay.sc.weibo.com,i.meituan.com,h5.ele.me,m.ctrip.com,music.163.com,mwegame.qq.com，as.xiaojukeji.com,sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com,webapi.qmai.cn，user-api-prd-mx.wandafilm.com,act.10010.com, m.client.10010.com,wapside.189.cn
+hostname = tieba.baidu.com,api.m.jd.com,pi.weibo.cn,pay.sc.weibo.com,i.meituan.com,h5.ele.me,m.ctrip.com,music.163.com,mwegame.qq.com,as.xiaojukeji.com,sf-integral-sign-in.weixinjia.net,mcs-mimp-web.sf-express.com,webapi.qmai.cn,user-api-prd-mx.wandafilm.com,act.10010.com,m.client.10010.com,wapside.189.cn
 
 
 # 百度贴吧 === tieba.baidu.com
 # 京东 === api.m.jd.com
-# 微博 === pi.weibo.cn, pay.sc.weibo.com
+# 微博 === pi.weibo.cn,pay.sc.weibo.com
 # 美团 === i.meituan.com
 # 饿了么 === h5.ele.me
 # 携程旅行 === m.ctrip.com
 # 网易云音乐 === music.163.com
 # 掌上飞车 === mwegame.qq.com
 # 滴滴出行 === as.xiaojukeji.com
-# 顺丰速运 === sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com
+# 顺丰速运 === sf-integral-sign-in.weixinjia.net,mcs-mimp-web.sf-express.com
 # 奈雪的茶 === webapi.qmai.cn
 # 万达电影 === user-api-prd-mx.wandafilm.com
-# 联通 === act.10010.com, m.client.10010.com
+# 联通 === act.10010.com,m.client.10010.com
 # 电信 === wapside.189.cn
