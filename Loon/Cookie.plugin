@@ -1,13 +1,59 @@
+# Get Cookie Enalbe All Time
+
 [Script]
 
-
-# 格式
+# Format
+# name
 # http-request https script-path=path,tag=name,enable=true
+
+# name
 # http-response https script-path=path,timeout=10,requires-body=true,tag=name,enable=true
+
+########################
+
+
+# 掌上飞车
+# http-request ^https:\/\/mwegame\.qq\.com\/ams\/sign\/doSign\/month script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js,tag=掌上飞车,enable=true
+
+
+# 网易云音乐
+http-request ^https:\/\/music.163.com\/weapi\/user\/level script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,requires-body=true,tag=网易云音乐,enable=true
+
+
+# 顺丰速运
+http-request ^https:\/\/sf-integral-sign-in.weixinjia.net\/app\/index script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,tag=顺丰速运,enable=true
+
+
+http-request ^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/(.*?)Redirect script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,tag=顺丰速运,enable=true
+
+
+# 万达电影
+http-response ^https:\/\/user-api-prd-mx\.wandafilm\.com script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.cookie.js,tag=万达电影,enable=true
+
+
+# 联通签到
+http-request ^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js,tag=联通签到,enable=true
+
+
+http-request ^https?:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js,tag=联通签到,enable=true
+
+
+http-request ^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js,tag=联通签到,enable=true
+
+
+# 电信签到
+http-request ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js,tag=电信签到,enable=true
 
 
 [MITM]
-hostname=
+
+hostname=mwegame.qq.com,music.163.com,sf-integral-sign-in.weixinjia.net,mcs-mimp-web.sf-express.com,user-api-prd-mx.wandafilm.com,act.10010.com,m.client.10010.com,wapside.189.cn
 
 
 # name === example
+# 掌上飞车 === mwegame.qq.com
+# 网易云音乐 === music.163.com
+# 顺丰速运 === sf-integral-sign-in.weixinjia.net,mcs-mimp-web.sf-express.com
+# 万达电影 === user-api-prd-mx.wandafilm.com
+# 联通 === act.10010.com,m.client.10010.com
+# 电信 === wapside.189.cn
