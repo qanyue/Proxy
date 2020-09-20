@@ -1,6 +1,6 @@
 #!name=Task
 #!desc=Chiupam's Task
-
+#!system=ios
 
 // 123 = type=cron, cronxp=111111,script-path=https
 

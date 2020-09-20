@@ -1,5 +1,6 @@
 #!name=Cookie
 #!desc=Get cookie in Need
+#!system=ios
 
 // name = type=http-request,pattern=regex,script-pattern=https
 
