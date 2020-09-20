@@ -5,6 +5,6 @@
 hostname=weather-data.apple.com, api.weather.com
 
 [Script]
-彩云天气 = type=cron,cronexp=*/30 * * * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
+彩云天气 = type=cron,cronexp=0 0 8-22/2 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
 
 type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
