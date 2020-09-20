@@ -1,0 +1,114 @@
+#!name=Task
+
+
+// 123 = type=cron, cronxp=111111,script-path=https
+
+
+[Script]
+# 百度贴吧
+百度贴吧 = type=cron, cronxp=0 0 0,7 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js
+
+
+# 京东京豆
+京豆 = type=cron, cronxp=30 0 */12 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+
+取消关注 = type=cron, cronxp=0 59 23 * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_unsubscribe.js
+
+
+# 微博
+微博 = type=cron, cronxp=0 1 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/weibo.js
+
+
+# 美团
+美团 = type=cron, cronxp=6 1 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js
+
+
+# 饿了么
+饿了么 = type=cron, cronxp=12 1 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/elemSign.js
+
+
+饿了么 = type=cron, cronxp=12 1 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js
+
+
+# 携程
+携程 = type=cron, cronxp=18 1 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip.js
+
+
+# 网易云音乐
+网易云音乐 = type=cron, cronxp=24 1 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js
+
+
+# 掌上飞车
+掌上飞车 = type=cron, cronxp=30 1 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js
+
+
+# 滴滴出行
+滴滴出行 = type=cron, cronxp=36 1 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
+
+
+滴滴出行 = type=cron, cronxp=55 59 23 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_reward.js
+
+
+# 顺丰速运
+顺丰速运 = type=cron, cronxp=42 1 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js
+
+
+# 奈雪的茶
+奈雪的茶 = type=cron, cronxp=48 1 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
+
+
+# 京东系列 ###############
+
+宠汪汪——兑换 = type=cron, cronxp=0 0 8 * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy_reward.js
+
+
+宠汪汪——每日首次 = type=cron, cronxp=6 2 0 * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy.js
+
+
+宠汪汪——喂食 = type=cron, cronxp=0 2 3-21/3 * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy_feedPets.js
+
+
+天天加速 = type=cron, cronxp=0 4 */3 * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_speed.js
+
+
+京小超 = type=cron, cronxp=30 4 * * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_superMarket.js
+
+
+京小超——蓝币 = type=cron, cronxp=0 5 0 * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_blueCoin.js
+
+
+种豆得豆 = type=cron, cronxp=15 0 7-21/2 * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_plantBean.js
+
+
+东东萌宠 = type=cron, cronxp=15 0 8,12,18 * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_pet.js
+
+
+摇钱树 = type=cron, cronxp=0 5 1,10,16 * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_moneyTree.js
+
+
+东东农场 = type=cron, cronxp=0 3 6,12,18 * * *,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_fruit.js
+
+
+# 联通签到
+联通签到 = type=cron, cronxp=0 0 22 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js
+
+
+# 电信签到
+电信签到 = type=cron, cronxp=7 0 22 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js
+
+
+# 蚂蚁森林
+蚂蚁森林 = type=cron, cronxp=30 7 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/yichahucha/cron_daily.js
+
+
+# Epic周免
+Epic周免 = type=cron, cronxp=30 9 * * 1,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/epic.js
+
+
+# PSN会免
+PSN会免 = type=cron, cronxp=0 7 1 * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/psn.js
+
+
+[MITM]
+hostname = mwegame.qq.com, music.163.com, sf-integral-sign-in.weixinjia.net, mcs-mimp-web.sf-express.com, user-api-prd-mx.wandafilm.com, act.10010.com, m.client.10010.com, wapside.189.cn,tieba.baidu.com, api.m.jd.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me,m.ctrip.com, as.xiaojukeji.com, webapi.qmai.cn
