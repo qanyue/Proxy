@@ -2,7 +2,7 @@
 #!desc=Get cookie in Need
 #!system=ios
 
-// name = type=http-request,pattern=regex,script-pattern=https
+// type=http-request, pattern=regex, script-path=https, require-body=false
 
 
 [Script]

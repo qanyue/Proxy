@@ -2,29 +2,32 @@
 #!desc=Get Cookie Enalbe All Time
 #!system=ios
 
+// type=http-request, pattern=regex, script-path=https, require-body=false
+
 [Script]
 # 掌上飞车
-掌上飞车 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js,type=http-request,pattern=^https:\/\/mwegame\.qq\.com\/ams\/sign\/doSign\/month
+type=http-request, pattern=^https:\/\/mwegame\.qq\.com\/ams\/sign\/doSign\/month, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js, require-body=false
 
 
 # 网易云音乐
-网易云音乐 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,type=^https:\/\/music.163.com\/weapi\/user\/level,requires-body=true
+type=http-request, pattern=^https:\/\/music.163.com\/weapi\/user\/level, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js, require-body=false
+
 
 # 顺丰速运
-顺丰速运 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,type=http-request,pattern=^https:\/\/sf-integral-sign-in.weixinjia.net\/app\/index
+type=http-request, pattern=^https:\/\/sf-integral-sign-in.weixinjia.net\/app\/index, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js, require-body=false
 
 
-顺丰速运 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,type=http-request,pattern=^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/(.*?)Redirect
+type=http-request, pattern=^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/(.*?)Redirect, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js, require-body=false
 
 
 # 联通签到
-联通签到 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js,type=http-request,pattern=^https:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm
-联通签到 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js,type=http-request,pattern=^https:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign
-联通签到 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js,type=http-request,pattern=^https:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo)
+type=http-request, pattern=^https:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, require-body=false
+type=http-request, pattern=^https:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, require-body=false
+type=http-request, pattern=^https:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo), script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, require-body=false
 
 
 # 电信签到
-电信签到 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/sign
+type=http-request, pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/sign, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js, require-body=false
 
 
 [MITM]
