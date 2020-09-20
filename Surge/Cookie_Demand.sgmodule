@@ -52,4 +52,4 @@ type=http-request, pattern=regex, script-path=https, require-body=false
 
 
 [MITM]
-hostname = tieba.baidu.com, api.m.jd.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me,m.ctrip.com, as.xiaojukeji.com, webapi.qmai.cn
+hostname =  %APPEND% tieba.baidu.com, api.m.jd.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me,m.ctrip.com, as.xiaojukeji.com, webapi.qmai.cn
