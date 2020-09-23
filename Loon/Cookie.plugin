@@ -41,9 +41,12 @@ http-request ^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/user
 http-request ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js,tag=电信签到,enable=true
 
 
+http-request ^https?:\/\/e\.189\.cn\/store\/user\/balance_new\.do script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/10000.cookie.js,tag=电信余额,enable=true
+
+
 [MITM]
 
-hostname=mwegame.qq.com,music.163.com,sf-integral-sign-in.weixinjia.net,mcs-mimp-web.sf-express.com,user-api-prd-mx.wandafilm.com,act.10010.com,m.client.10010.com,wapside.189.cn
+hostname=mwegame.qq.com,music.163.com,sf-integral-sign-in.weixinjia.net,mcs-mimp-web.sf-express.com,user-api-prd-mx.wandafilm.com,act.10010.com,m.client.10010.com,wapside.189.cn,e.189.cn
 
 
 # name === example
@@ -53,3 +56,4 @@ hostname=mwegame.qq.com,music.163.com,sf-integral-sign-in.weixinjia.net,mcs-mimp
 # 万达电影 === user-api-prd-mx.wandafilm.com
 # 联通 === act.10010.com,m.client.10010.com
 # 电信 === wapside.189.cn
+# 电信余额 === e.189.cn
