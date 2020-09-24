@@ -3,7 +3,7 @@
 // nane = type=http-request,pattern=https,script-path=json
 [Script]
 # 百度贴吧
-百度贴吧 = type=http-request ^https?:\/\/tieba\.baidu\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js
+百度贴吧 = type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js
 # 京东
 京东 = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 # 微博
@@ -11,17 +11,17 @@
 # 微博钱包
 微博钱包 = type=http-request,pattern=https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
 # 美团
-美团 = type=http-request, pattern=^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js,require-body=false
+美团 = type=http-request,pattern=^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js
 # 饿了么
-饿了么 = type=http-request, pattern=^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$, script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemGetCookies.js,require-body=false
+饿了么 = type=http-request,pattern=^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$,script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemGetCookies.js
 # 携程
-携程 = type=http-request,pattern=https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip_cookie.js,require-body=false
+携程 = type=http-request,pattern=https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/ctrip_cookie.js
 # 滴滴出行
-滴滴出行 = type=http-request,pattern=^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js,require-body=false
+滴滴出行 = type=http-request,pattern=^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
 # 奈雪的茶
-奈雪的茶 = type=http-request,pattern=^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js,require-body=false
+奈雪的茶 = type=http-request,pattern=^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
 # 海底捞
-海底捞 = http-request ^https:\/\/superapp\.kiwa-tech\.com\/app\/coupon\/customerLevelShow requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Haidilao/Haidilao.js
-海底捞 = http-request ^https:\/\/activity-1\.m\.duiba\.com\.cn\/signactivity\/getSignInfo script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Haidilao/Haidilao.js
+海底捞 = http-request,pattern=^https:\/\/superapp\.kiwa-tech\.com\/app\/coupon\/customerLevelShow requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Haidilao/Haidilao.js
+海底捞 = http-request,pattern=^https:\/\/activity-1\.m\.duiba\.com\.cn\/signactivity\/getSignInfo,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Haidilao/Haidilao.js
 [MITM]
 hostname=%APPEND% tieba.baidu.com, api.m.jd.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me,m.ctrip.com, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, superapp.kiwa-tech.com, activity-1.m.duiba.com.cn
