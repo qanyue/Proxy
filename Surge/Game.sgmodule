@@ -1,0 +1,15 @@
+#!name=京豆游戏
+#!desc=京豆全系列游戏脚本
+# > 京东系列
+宠汪汪——兑换 = type=cron, cronxp=0 0 0,8,16 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy_reward.j
+宠汪汪——首次 = type=cron, cronxp=6 2 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy.js
+宠汪汪——偷粮 = type=cron,cronexp=0 2 0,6 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_steal.js
+宠汪汪——喂食 = type=cron, cronxp=0 2 3-21/3 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy_feedPets.js
+天天加速 = type=cron, cronxp=0 4 */3 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_speed.js
+京小超 = type=cron, cronxp=30 4 * * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_superMarket.js
+京小超——蓝币 = type=cron, cronxp=0 5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_blueCoin.js
+种豆得豆 = type=cron, cronxp=15 0 7-21/2 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_plantBean.js
+东东萌宠 = type=cron, cronxp=15 0 8,12,18 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_pet.js
+摇钱树 = type=cron, cronxp=0 5 1,10,16 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_moneyTree.js
+东东农场 = type=cron, cronxp=0 3 6,12,18 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_fruit.js
+进店领豆 = type=cron,cronexp=10 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_shop.js
