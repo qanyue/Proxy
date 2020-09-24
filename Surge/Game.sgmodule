@@ -3,7 +3,7 @@
 [Script]
 # > 京东系列
 宠汪汪——兑换 = type=cron, cronexp=0 0 0,8,16 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy_reward.j
-宠汪汪——首次 = type=cron, cronxp=6 2 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy.js
+宠汪汪——首次 = type=cron, cronexp=6 2 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy.js
 宠汪汪——偷粮 = type=cron,cronexp=0 2 0,6 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_steal.js
 宠汪汪——喂食 = type=cron, cronxp=0 2 3-21/3 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy_feedPets.js
 天天加速 = type=cron, cronxp=0 4 */3 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_speed.js
