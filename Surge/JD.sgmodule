@@ -1,5 +1,6 @@
 #!name=京东任务
 #!desc=京东全系列脚本，合并带有 BoxJs 商店版脚本
+//name = type=cron, cronexp=cronexample, wake-system=1, timeout=180, script-path=javescript
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/JD.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/JD.sgmodule
 [Script]
