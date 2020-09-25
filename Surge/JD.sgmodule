@@ -1,9 +1,14 @@
-#!name=京豆游戏
-#!desc=京豆全系列游戏脚本
+#!name=京豆
+#!desc=京豆全系列脚本
+//github:https://github.com/chiupam/Proxy/blob/master/Surge/JD.sgmodule
+//raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/JD.sgmodule
 [Script]
-# > 京东系列
+# > 京东签到系列
+# >> 京东京豆
+京豆 = type=cron, cronexp=30 0 */12 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
 # >> 京东取消关注商店
 取消关注 = type=cron, cronexp=0 59 23 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_unsubscribe.js,script-update-interval=0
+# > 京东游戏
 # >> 宠汪汪
 宠汪汪——兑换 = type=cron, cronexp=0 0 0-16/8 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_reward.js
 宠汪汪——首次 = type=cron, cronexp=6 2 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy.js
@@ -25,3 +30,5 @@
 # >> 临时活动
 进店领豆 = type=cron,cronexp=0 10 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_shop.js
 京东手机狂欢城 = type=cron,cronexp=1 0-18/6 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_818.js
+[MITM]
+hostname = %INSERT% api.m.jd.com

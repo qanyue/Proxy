@@ -1,6 +1,8 @@
 #!name=Get Cookie All Time
 #!desc=全时启动获取cookie
-//      name = type=http-request,pattern=regex,script-path=https
+//name = type=http-request,pattern=regex,script-path=https
+//github:https://github.com/chiupam/Proxy/blob/master/Surge/Cookie_FullTime.sgmodule
+//raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Cookie_FullTime.sgmodule
 [Script]
 # > 掌上飞车
 掌上飞车 = type=http-request,pattern=^https:\/\/mwegame\.qq\.com\/ams\/sign\/doSign\/month,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js
