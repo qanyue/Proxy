@@ -1,5 +1,5 @@
 #!name=历史价格
-#!desc=京东、淘宝历史价格
+#!desc=京东、淘宝历史价格，合并带有各自主机名
 //name = type=http-request, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //name = type=http-response, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/Price.sgmodule

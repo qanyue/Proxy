@@ -1,8 +1,10 @@
 #!name=任务请求
-#!desc=自用签到任务请求
+#!desc=自用签到任务请求，合并带有主机名
 //name = type=cron, cronexp=cronexample, wake-system=1, timeout=180, script-path=javescript
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/Task.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Task.sgmodule
+[Rule]
+DOMAIN,rsshub.app,Proxy // EPIC
 [Script]
 # > 百度贴吧
 百度贴吧 = type=cron, cronexp=0 0 */12 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js
