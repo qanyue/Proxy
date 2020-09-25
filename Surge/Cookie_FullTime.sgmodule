@@ -1,4 +1,4 @@
-#!name=Get Cookie Enalbe All Time
+#!name=Get Cookie All Time
 #!desc=全时启动获取cookie
 //      name = type=http-request,pattern=regex,script-path=https
 [Script]
