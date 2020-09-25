@@ -1,6 +1,6 @@
 #!name=任务请求
 #!desc=自用签到任务请求
-//123 = type=cron, cronexp=111111,wake-system=1,timeout=180,script-path=https,script-update-interval=0
+//name = type=cron, cronexp=cronexample,wake-system=1,timeout=180,script-path=https
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/Task.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Task.sgmodule
 [Script]

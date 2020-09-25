@@ -2,6 +2,8 @@
 #!desc=京东、淘宝历史价格
 //name = type=http-request, pattern=regex, requires-body=1, max-size=0, script-path=javescript, script-update-interval=0
 //name = type=http-response, pattern=regex, requires-body=1, max-size=0, script-path=javescript, script-update-interval=0
+//github:https://github.com/chiupam/Proxy/blob/master/Surge/Price.sgmodule
+//raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Price.sgmodule
 [Script]
 # > 淘宝比价
 # >> 不生效或失效的需要卸载 tb 重装，注意不开脚本进 tb 会失效
