@@ -2,6 +2,8 @@
 #!desc=京豆全系列游戏脚本
 [Script]
 # > 京东系列
+# >> 京东取消关注商店
+取消关注 = type=cron, cronexp=0 59 23 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_unsubscribe.js,script-update-interval=0
 # >> 宠汪汪
 宠汪汪——兑换 = type=cron, cronexp=0 0 0,8,16 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy_reward.j
 宠汪汪——首次 = type=cron, cronexp=6 2 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/chiupam/Scripts/master/jd_joy.js
