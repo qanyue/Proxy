@@ -3,9 +3,9 @@
 
 typr = http-response 
 
-regex = ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig)
+pattern = ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig)
 
-path = https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/jd_price.js
+script-path = https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/jd_price.js
 
 hostname = api.m.jd.com
 

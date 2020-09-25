@@ -4,13 +4,13 @@
 
 type = http-request 
 
-tegex = ^http://.+/amdc/mobileDispatch
+pattern = ^http://.+/amdc/mobileDispatch
 
 script-path = https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price_lite.js
 
 type = http-response 
 
-regex = ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail
+pattern = ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail
 
 script-path = https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/tb_price_lite.js
 
