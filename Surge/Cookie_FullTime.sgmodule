@@ -1,5 +1,5 @@
 #!name=Get Cookie Enalbe All Time
-#!desc=全时获取cookie
+#!desc=全时启动获取cookie
 //          type=http-request,pattern=regex,script-path=https
 [Script]
 # > 掌上飞车
