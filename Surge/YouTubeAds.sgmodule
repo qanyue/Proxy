@@ -1,5 +1,7 @@
 #!name=YouTubeAds
 #!desc=去除 YouTube 广告
+//github:https://github.com/chiupam/Proxy/blob/master/Surge/YouTubeAds.sgmodule
+//raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/YouTubeAds.sgmodule
 [Rule]
 URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
 URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
