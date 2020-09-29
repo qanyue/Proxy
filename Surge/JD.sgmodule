@@ -16,7 +16,7 @@
 宠汪汪——兑换 = type=cron, cronexp=0 0 0-16/8 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_reward.js
 宠汪汪——首次 = type=cron, cronexp=6 2 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy.js
 宠汪汪——偷粮 = type=cron,cronexp=0 2 0-6/6 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_steal.js
-宠汪汪——喂食 = type=cron, cronexp=0 */15 3-21/3 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
+宠汪汪——喂食 = type=cron, cronexp=6 2-47/15 3-21/3 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
 # >> 天天加速
 天天加速 = type=cron, cronexp=0 4 */3 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_speed.js
 # >> 京小超
