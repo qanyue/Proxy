@@ -1,5 +1,5 @@
 #!name=Get Cookie All Time
-#!desc=全时启动获取cookie，合并带有各自主机名
+#!desc=Start to get cookies all the time, combined with their respective hostname.
 //name = type=http-request, pattern=regex, script-path=javescript
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/Cookie_FullTime.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Cookie_FullTime.sgmodule

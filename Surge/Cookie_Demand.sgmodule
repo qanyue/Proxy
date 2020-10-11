@@ -1,5 +1,5 @@
 #!name=Get cookie in Need
-#!desc=按需启动获取cookie，合并带有各自主机名
+#!desc=Start to get cookies on demand, merge with their respective hostnames.
 //name = type=http-request,pattern=https,script-path=javescript
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/Cookie_Demand.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Cookie_Demand.sgmodule
