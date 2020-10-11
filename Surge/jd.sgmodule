@@ -1,4 +1,4 @@
-#!name=JD Performs Tasks Regularly.
+#!name=JD Performs Tasks Regularly
 #!desc=JD’s full range of scripts, combined with BoxJs scripts.
 //name = type=cron, cronexp=cronexample, wake-system=1, timeout=180, script-path=javescript
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/JD.sgmodule
