@@ -1,5 +1,5 @@
-#!name=彩云天气
-#!desc=基于彩云天气API推送实时天气信息
+#!name=ColorfulClouds
+#!desc=Push real-time weather information based on ColorfulClouds API.
 [MITM]
 hostname = %INSERT% weather-data.apple.com, api.weather.com
 [Script]
