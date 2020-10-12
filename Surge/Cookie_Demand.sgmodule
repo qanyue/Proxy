@@ -21,6 +21,6 @@
 # > 奈雪的茶
 奈雪的茶 = type=http-request,pattern=^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
 # > 电信套餐查询 
-电信套餐查询 = type=http-request, pattern=https?:\/\/e\.189\.cn\/store\/user\/package_detail\.do,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js
+电信套餐查询 = type=http-request,pattern=https?:\/\/e\.189\.cn\/store\/user\/package_detail\.do,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js
 [MITM]
 hostname = %INSERT% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me,m.ctrip.com, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, e.189.cn
