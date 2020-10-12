@@ -230,7 +230,7 @@ function realtimeWeather() {
 
   $.notify(
     `${address.district}${address.street} 气温${realtime.apparent_temperature}℃ 体感${realtime.temperature}℃`,
-    `空气质量${realtime.air_quality.description.chn} 紫外线${realtime.life_index.ultraviolet.desc} ${mapWind(realtime.wind.speed,realtime.wind.direction)} 湿度${(realtime.humidity * 100).toFixed(0)}%`,
+    `空气质量${realtime.air_quality.description.chn} 紫外线${realtime.life_index.ultraviolet.desc} ${mapWind(realtime.wind.speed,realtime.wind.direction)}风 湿度${(realtime.humidity * 100).toFixed(0)}%`,
     `${keypoint}！
     
 ${alertInfo}${hourlySkycon}
@@ -284,39 +284,39 @@ function mapWind(speed, direction) {
     description = "无风";
     return description;
   } else if (speed <= 5) {
-    description = "微风徐徐";
+    description = "1级";
   } else if (speed <= 11) {
-    description = "清风";
+    description = "2级";
   } else if (speed <= 19) {
-    description = "树叶摇摆";
+    description = "3级";
   } else if (speed <= 28) {
-    description = "树枝摇动";
+    description = "4级";
   } else if (speed <= 38) {
-    description = "风力强劲";
+    description = "5级";
   } else if (speed <= 49) {
-    description = "风力强劲";
+    description = "6级";
   } else if (speed <= 61) {
-    description = "风力超强";
+    description = "7级";
   } else if (speed <= 74) {
-    description = "狂风大作";
+    description = "8级";
   } else if (speed <= 88) {
-    description = "狂风呼啸";
+    description = "9级";
   } else if (speed <= 102) {
-    description = "暴风毁树";
+    description = "10级";
   } else if (speed <= 117) {
-    description = "暴风毁树";
+    description = "11级";
   } else if (speed <= 133) {
-    description = "飓风";
+    description = "12级";
   } else if (speed <= 149) {
-    description = "台风";
+    description = "13级";
   } else if (speed <= 166) {
-    description = "强台风";
+    description = "14级";
   } else if (speed <= 183) {
-    description = "强台风";
+    description = "15级";
   } else if (speed <= 201) {
-    description = "超强台风";
+    description = "16级";
   } else if (speed <= 220) {
-    description = "超强台风";
+    description = "17级";
   }
 
   if (direction >= 348.76 || direction <= 11.25) {
