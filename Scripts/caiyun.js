@@ -229,9 +229,10 @@ function realtimeWeather() {
   }
 
   $.notify(
-    `${address.province} ${address.city} ${address.district} ${address.street}`,
-    `${mapSkycon(realtime.skycon)} ${realtime.life_index.comfort.desc} 风力${mapWind(realtime.wind.speed, realtime.wind.direction)} 体感${realtime.temperature}℃ 气温${realtime.apparent_temperature}℃`,
+    `${address.district}${address.street} 气温${realtime.apparent_temperature}℃ 体感${realtime.temperature}℃`,
+    `空气质量${realtime.air_quality.description.chn} 紫外线${realtime.life_index.ultraviolet.desc} ${mapWind(realtime.wind.speed, realtime.wind.direction)} 湿度${(realtime.humidity * 100).toFixed(0)}%`,
     `${keypoint}！
+    
 ${alertInfo}${hourlySkycon}
 `,
     {
