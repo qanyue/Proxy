@@ -28,8 +28,8 @@ if (typeof $request !== "undefined") {
   if (res === null) {
     $.notify(
       "[彩云天气]",
-      "❌ 正则表达式匹配错误",
-      `🥬 无法从URL: ${url} 获取位置。`
+      "正则表达式匹配错误",
+      `无法从URL: ${url} 获取位置。`
     );
     $.done({ body: $request.body });
   }
@@ -38,7 +38,7 @@ if (typeof $request !== "undefined") {
     longitude: res[2],
   };
   if (!$.read("location")) {
-    $.notify("[彩云天气]", "", "🎉🎉🎉 获取定位成功。");
+    $.notify("[彩云天气]", "", "获取定位成功。");
   }
   if (display_location) {
     $.info(
@@ -57,17 +57,17 @@ if (typeof $request !== "undefined") {
     const { caiyun, tencent } = $.read("token") || {};
 
     if (!caiyun) {
-      throw new ERR.TokenError("❌ 未找到彩云Token令牌");
+      throw new ERR.TokenError("未找到彩云Token令牌");
     } else if (caiyun.indexOf("http") !== -1) {
-      throw new ERR.TokenError("❌ Token令牌 并不是 一个链接！");
+      throw new ERR.TokenError("Token令牌并不是 一个链接！");
     } else if (!tencent) {
-      throw new ERR.TokenError("❌ 未找到腾讯地图Token令牌");
+      throw new ERR.TokenError("未找到腾讯地图Token令牌");
     } else if (!$.read("location")) {
       // no location
       $.notify(
         "[彩云天气]",
-        "❌ 未找到定位",
-        "🤖 您可能没有正确设置MITM，请检查重写是否成功。"
+        "未找到定位",
+        "您可能没有正确设置MITM，请检查重写是否成功。"
       );
     } else {
       await scheduler();
@@ -78,12 +78,12 @@ if (typeof $request !== "undefined") {
         $.notify(
           "[彩云天气]",
           err.message,
-          "🤖 由于API Token具有时效性，请前往\nhttps://t.me/cool_scripts\n获取最新Token。",
+          "由于API Token具有时效性，请前往\nhttps://t.me/cool_scripts\n获取最新Token。",
           {
             "open-url": "https://t.me/cool_scripts",
           }
         );
-      else $.notify("[彩云天气]", "❌ 出现错误", JSON.stringify(err));
+      else $.notify("[彩云天气]", "出现错误", JSON.stringify(err, Object.getOwnPropertyNames(err)));
     })
     .finally($.done());
 }
@@ -107,12 +107,12 @@ async function query() {
   $.info(location);
   const isNumeric = (input) => input && !isNaN(input);
   if (!isNumeric(location.latitude) || !isNumeric(location.longitude)) {
-    throw new Error("❌ 经纬度设置错误！");
+    throw new Error("经纬度设置错误！");
   }
 
   if (Number(location.latitude) > 90 || Number(location.longitude) > 180) {
     throw new Error(
-      "🤖 地理小课堂：经度的范围是0~180，纬度是0~90哦。请仔细检查经纬度是否设置正确。"
+      "地理小课堂：经度的范围是0~180，纬度是0~90哦。请仔细检查经纬度是否设置正确。"
     );
   }
   // query API
@@ -124,7 +124,7 @@ async function query() {
 
   $.log("Query weather...");
 
-  const weather = await $.get({
+  const weather = await $.http.get({
     url,
     headers: {
       "User-Agent": "ColorfulCloudsPro/5.0.10 (iPhone; iOS 14.0; Scale/3.00)",
@@ -148,7 +148,7 @@ async function query() {
   if (addressUpdated === undefined || now - addressUpdated > 30 * 60 * 1000) {
     await $.wait(Math.random() * 2000);
     $.log("Query location...");
-    address = await $.get(
+    address = await $.http.get(
       `https://apis.map.qq.com/ws/geocoder/v1/?key=${
         $.read("token").tencent
       }&location=${$.read("location").latitude},${$.read("location").longitude}`
@@ -156,7 +156,7 @@ async function query() {
       .then((resp) => {
         const body = JSON.parse(resp.body);
         if (body.status !== 0) {
-          throw new ERR.TokenError("❌ 腾讯地图Token错误");
+          throw new ERR.TokenError("腾讯地图Token错误");
         }
         return body.result.address_component;
       })
@@ -229,12 +229,10 @@ function realtimeWeather() {
   }
 
   $.notify(
-    `${address.city}${address.district}  气温${realtime.apparent_temperature}℃  体感${realtime.temperature}℃`,
-    `空气质量${realtime.air_quality.description.chn}  紫外线${realtime.life_index.ultraviolet.desc} 湿度${(realtime.humidity * 100).toFixed(0)}%`,
-    `${keypoint}~
-
+    `${address.province} ${address.city} ${address.district} ${address.street}`,
+    `${mapSkycon(realtime.skycon)} ${realtime.life_index.comfort.desc} 风力${mapWind(realtime.wind.speed, realtime.wind.direction)} 体感${realtime.temperature}℃ 气温${realtime.apparent_temperature}℃`,
+    `${keypoint}！
 ${alertInfo}${hourlySkycon}
-
 `,
     {
       "media-url": `${mapSkycon(realtime.skycon)[1]}`,
@@ -285,39 +283,39 @@ function mapWind(speed, direction) {
     description = "无风";
     return description;
   } else if (speed <= 5) {
-    description = "1级";
+    description = "微风徐徐";
   } else if (speed <= 11) {
-    description = "2级";
+    description = "清风";
   } else if (speed <= 19) {
-    description = "3级";
+    description = "树叶摇摆";
   } else if (speed <= 28) {
-    description = "4级";
+    description = "树枝摇动";
   } else if (speed <= 38) {
-    description = "5级";
+    description = "风力强劲";
   } else if (speed <= 49) {
-    description = "6级";
+    description = "风力强劲";
   } else if (speed <= 61) {
-    description = "7级";
+    description = "风力超强";
   } else if (speed <= 74) {
-    description = "8级";
+    description = "狂风大作";
   } else if (speed <= 88) {
-    description = "9级";
+    description = "狂风呼啸";
   } else if (speed <= 102) {
-    description = "10级";
+    description = "暴风毁树";
   } else if (speed <= 117) {
-    description = "11级";
+    description = "暴风毁树";
   } else if (speed <= 133) {
-    description = "12级";
+    description = "飓风";
   } else if (speed <= 149) {
-    description = "13级";
+    description = "台风";
   } else if (speed <= 166) {
-    description = "14级";
+    description = "强台风";
   } else if (speed <= 183) {
-    description = "15级";
+    description = "强台风";
   } else if (speed <= 201) {
-    description = "16级";
+    description = "超强台风";
   } else if (speed <= 220) {
-    description = "17级";
+    description = "超强台风";
   }
 
   if (direction >= 348.76 || direction <= 11.25) {
@@ -354,7 +352,7 @@ function mapWind(speed, direction) {
     d_description = "北西北";
   }
 
-  return `${d_description}${description}`;
+  return `${d_description}风 ${description}`;
 }
 
 // 天气状况 --> 自然语言描述
@@ -463,5 +461,5 @@ function MYERR() {
 
 // prettier-ignore
 /*********************************** API *************************************/
-function API(s="untitled",t=!1){return new class{constructor(s,t){this.name=s,this.debug=t,this.isQX="undefined"!=typeof $task,this.isLoon="undefined"!=typeof $loon,this.isSurge="undefined"!=typeof $httpClient&&!this.isLoon,this.isNode="function"==typeof require,this.isJSBox=this.isNode&&"undefined"!=typeof $jsbox,this.node=(()=>{if(this.isNode){const s="undefined"!=typeof $request?void 0:require("request"),t=require("fs");return{request:s,fs:t}}return null})(),this.initCache();const e=(s,t)=>new Promise(function(e){setTimeout(e.bind(null,t),s)});Promise.prototype.delay=function(s){return this.then(function(t){return e(s,t)})}}get(s){return this.isQX?("string"==typeof s&&(s={url:s,method:"GET"}),$task.fetch(s)):new Promise((t,e)=>{this.isLoon||this.isSurge?$httpClient.get(s,(s,i,o)=>{s?e(s):t({status:i.status,headers:i.headers,body:o})}):this.node.request(s,(s,i,o)=>{s?e(s):t({...i,status:i.statusCode,body:o})})})}post(s){return this.isQX?("string"==typeof s&&(s={url:s}),s.method="POST",$task.fetch(s)):new Promise((t,e)=>{this.isLoon||this.isSurge?$httpClient.post(s,(s,i,o)=>{s?e(s):t({status:i.status,headers:i.headers,body:o})}):this.node.request.post(s,(s,i,o)=>{s?e(s):t({...i,status:i.statusCode,body:o})})})}initCache(){if(this.isQX&&(this.cache=JSON.parse($prefs.valueForKey(this.name)||"{}")),(this.isLoon||this.isSurge)&&(this.cache=JSON.parse($persistentStore.read(this.name)||"{}")),this.isNode){let s="root.json";this.node.fs.existsSync(s)||this.node.fs.writeFileSync(s,JSON.stringify({}),{flag:"wx"},s=>console.log(s)),this.root={},s=`${this.name}.json`,this.node.fs.existsSync(s)?this.cache=JSON.parse(this.node.fs.readFileSync(`${this.name}.json`)):(this.node.fs.writeFileSync(s,JSON.stringify({}),{flag:"wx"},s=>console.log(s)),this.cache={})}}persistCache(){const s=JSON.stringify(this.cache);this.isQX&&$prefs.setValueForKey(s,this.name),(this.isLoon||this.isSurge)&&$persistentStore.write(s,this.name),this.isNode&&(this.node.fs.writeFileSync(`${this.name}.json`,s,{flag:"w"},s=>console.log(s)),this.node.fs.writeFileSync("root.json",JSON.stringify(this.root),{flag:"w"},s=>console.log(s)))}write(s,t){this.log(`SET ${t}`),-1!==t.indexOf("#")?(t=t.substr(1),this.isSurge&this.isLoon&&$persistentStore.write(s,t),this.isQX&&$prefs.setValueForKey(s,t),this.isNode&&(this.root[t]=s)):this.cache[t]=s,this.persistCache()}read(s){return this.log(`READ ${s}`),-1===s.indexOf("#")?this.cache[s]:(s=s.substr(1),this.isSurge&this.isLoon?$persistentStore.read(s):this.isQX?$prefs.valueForKey(s):this.isNode?this.root[s]:void 0)}delete(s){this.log(`DELETE ${s}`),delete this.cache[s],-1!==s.indexOf("#")?(s=s.substr(1),this.isSurge&this.isLoon&&$persistentStore.write(null,s),this.isQX&&$prefs.setValueForKey(null,s),this.isNode&&delete this.root[s]):this.cache[s]=data,this.persistCache()}notify(s,t="",e="",i={}){const o=i["open-url"],n=i["media-url"],r=e+(o?`\n点击跳转: ${o}`:"")+(n?`\n多媒体: ${n}`:"");if(this.isQX&&$notify(s,t,e,i),this.isSurge&&$notification.post(s,t,r),this.isLoon&&$notification.post(s,t,e,o),this.isNode)if(this.isJSBox){const e=require("push");e.schedule({title:s,body:(t?t+"\n":"")+r})}else console.log(`${s}\n${t}\n${r}\n\n`)}log(s){this.debug&&console.log(s)}info(s){console.log(s)}error(s){console.log("ERROR: "+s)}wait(s){return new Promise(t=>setTimeout(t,s))}done(s={}){this.isQX||this.isLoon||this.isSurge?$done(s):this.isNode&&!this.isJSBox&&"undefined"!=typeof $context&&($context.headers=s.headers,$context.statusCode=s.statusCode,$context.body=s.body)}}(s,t)}
+function ENV(){const e="undefined"!=typeof $task,t="undefined"!=typeof $loon,s="undefined"!=typeof $httpClient&&!t,o="function"==typeof require&&"undefined"!=typeof $jsbox;return{isQX:e,isLoon:t,isSurge:s,isNode:"function"==typeof require&&!o,isJSBox:o,isRequest:"undefined"!=typeof $request,isScriptable:"undefined"!=typeof importModule}}function HTTP(e,t={}){const{isQX:s,isLoon:o,isSurge:i,isScriptable:n,isNode:r}=ENV();const u={};return["GET","POST","PUT","DELETE","HEAD","OPTIONS","PATCH"].forEach(c=>u[c.toLowerCase()]=(u=>(function(u,c){(c="string"==typeof c?{url:c}:c).url=e?e+c.url:c.url;const h=(c={...t,...c}).timeout,l={onRequest:()=>{},onResponse:e=>e,onTimeout:()=>{},...c.events};let a,d;if(l.onRequest(u,c),s)a=$task.fetch({method:u,...c});else if(o||i||r)a=new Promise((e,t)=>{(r?require("request"):$httpClient)[u.toLowerCase()](c,(s,o,i)=>{s?t(s):e({statusCode:o.status||o.statusCode,headers:o.headers,body:i})})});else if(n){const e=new Request(c.url);e.method=u,e.headers=c.headers,e.body=c.body,a=new Promise((t,s)=>{e.loadString().then(s=>{t({statusCode:e.response.statusCode,headers:e.response.headers,body:s})}).catch(e=>s(e))})}const f=h?new Promise((e,t)=>{d=setTimeout(()=>(l.onTimeout(),t(`${u} URL: ${c.url} exceeds the timeout ${h} ms`)),h)}):null;return(f?Promise.race([f,a]).then(e=>(clearTimeout(d),e)):a).then(e=>l.onResponse(e))})(c,u))),u}function API(e="untitled",t=!1){const{isQX:s,isLoon:o,isSurge:i,isNode:n,isJSBox:r,isScriptable:u}=ENV();return new class{constructor(e,t){this.name=e,this.debug=t,this.http=HTTP(),this.env=ENV(),this.node=(()=>{if(n){return{fs:require("fs")}}return null})(),this.initCache();Promise.prototype.delay=function(e){return this.then(function(t){return((e,t)=>new Promise(function(s){setTimeout(s.bind(null,t),e)}))(e,t)})}}initCache(){if(s&&(this.cache=JSON.parse($prefs.valueForKey(this.name)||"{}")),(o||i)&&(this.cache=JSON.parse($persistentStore.read(this.name)||"{}")),n){let e="root.json";this.node.fs.existsSync(e)||this.node.fs.writeFileSync(e,JSON.stringify({}),{flag:"wx"},e=>console.log(e)),this.root={},e=`${this.name}.json`,this.node.fs.existsSync(e)?this.cache=JSON.parse(this.node.fs.readFileSync(`${this.name}.json`)):(this.node.fs.writeFileSync(e,JSON.stringify({}),{flag:"wx"},e=>console.log(e)),this.cache={})}}persistCache(){const e=JSON.stringify(this.cache);s&&$prefs.setValueForKey(e,this.name),(o||i)&&$persistentStore.write(e,this.name),n&&(this.node.fs.writeFileSync(`${this.name}.json`,e,{flag:"w"},e=>console.log(e)),this.node.fs.writeFileSync("root.json",JSON.stringify(this.root),{flag:"w"},e=>console.log(e)))}write(e,t){this.log(`SET ${t}`),-1!==t.indexOf("#")?(t=t.substr(1),i&o&&$persistentStore.write(e,t),s&&$prefs.setValueForKey(e,t),n&&(this.root[t]=e)):this.cache[t]=e,this.persistCache()}read(e){return this.log(`READ ${e}`),-1===e.indexOf("#")?this.cache[e]:(e=e.substr(1),i&o?$persistentStore.read(e):s?$prefs.valueForKey(e):n?this.root[e]:void 0)}delete(e){this.log(`DELETE ${e}`),-1!==e.indexOf("#")?(e=e.substr(1),i&o&&$persistentStore.write(null,e),s&&$prefs.removeValueForKey(e),n&&delete this.root[e]):delete this.cache[e],this.persistCache()}notify(e,t="",c="",h={}){const l=h["open-url"],a=h["media-url"];if(s&&$notify(e,t,c,h),i&&$notification.post(e,t,c+`${a?"\n多媒体:"+a:""}`,{url:l}),o){let s={};l&&(s.openUrl=l),a&&(s.mediaUrl=a),"{}"==JSON.stringify(s)?$notification.post(e,t,c):$notification.post(e,t,c,s)}if(n||u){const s=c+(l?`\n点击跳转: ${l}`:"")+(a?`\n多媒体: ${a}`:"");if(r){require("push").schedule({title:e,body:(t?t+"\n":"")+s})}else console.log(`${e}\n${t}\n${s}\n\n`)}}log(e){this.debug&&console.log(e)}info(e){console.log(e)}error(e){console.log("ERROR: "+e)}wait(e){return new Promise(t=>setTimeout(t,e))}done(e={}){s||o||i?$done(e):n&&!r&&"undefined"!=typeof $context&&($context.headers=e.headers,$context.statusCode=e.statusCode,$context.body=e.body)}}(e,t)}
 /*****************************************************************************/
