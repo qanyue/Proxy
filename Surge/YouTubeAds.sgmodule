@@ -1,5 +1,5 @@
 #!name=YouTubeAds
-#!desc=去除 YouTube 广告
+#!desc=Remove YouTube Ads.
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/YouTubeAds.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/YouTubeAds.sgmodule
 
@@ -25,4 +25,4 @@ URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier),REJECT
 ^https?+:\/\/youtubei\.googleapis\.com\/youtubei\/.+?(?>ad|log)_ - reject-200
 
 [MITM]
-hostname = %INSERT% *.googlevideo.com, *.youtube.com, youtubei.googleapis.com
+hostname = %APPEND% *.googlevideo.com, *.youtube.com, youtubei.googleapis.com
