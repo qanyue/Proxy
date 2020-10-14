@@ -18,4 +18,3 @@ Zaker = type=cron,cronexp=0 1 0 * * *,script-path=https://raw.githubusercontent.
 电信营业厅 = type=cron,cronexp=0 4 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, script-update-interval=0
 趣头条 = type=cron,cronexp=*/3 6-21 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js, script-update-interval=0
 什么值得买 = type=cron,cronexp=30 4 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/quanx/smzdm.js, script-update-interval=0
-京东手机狂欢城 = type=cron,cronexp=1 0-18/6 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_818.js
