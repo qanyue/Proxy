@@ -210,7 +210,7 @@ function realtimeWeather() {
           } else {
             return acc;
           }
-        }, "[预警]") + "\n\n";
+        }, "[预警]") + "\n";
 
   const realtime = data.realtime;
   const keypoint = data.forecast_keypoint;
@@ -231,7 +231,7 @@ function realtimeWeather() {
 /************************** 显示栏 *********************************/
 
   $.notify(
-      
+
     `${address.district}${address.street} 气温${realtime.apparent_temperature}℃ 体感${realtime.temperature}℃`,//标题
 
     `空气质量${realtime.air_quality.description.chn} 紫外线${realtime.life_index.ultraviolet.desc} ${mapWind(realtime.wind.speed,realtime.wind.direction)}风 湿度${(realtime.humidity * 100).toFixed(0)}%`,//副标题
@@ -240,7 +240,6 @@ function realtimeWeather() {
     
 ${alertInfo}${hourlySkycon}
 `,//正文
-
   );
 }
 
