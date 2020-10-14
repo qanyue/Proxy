@@ -228,16 +228,19 @@ function realtimeWeather() {
       (i == 2 ? "" : "\n");
   }
 
+/************************** 显示栏 *********************************/
+
   $.notify(
-    `${address.district}${address.street} 气温${realtime.apparent_temperature}℃ 体感${realtime.temperature}℃`,
-    `空气质量${realtime.air_quality.description.chn} 紫外线${realtime.life_index.ultraviolet.desc} ${mapWind(realtime.wind.speed,realtime.wind.direction)}风 湿度${(realtime.humidity * 100).toFixed(0)}%`,
+      
+    `${address.district}${address.street} 气温${realtime.apparent_temperature}℃ 体感${realtime.temperature}℃`,//标题
+
+    `空气质量${realtime.air_quality.description.chn} 紫外线${realtime.life_index.ultraviolet.desc} ${mapWind(realtime.wind.speed,realtime.wind.direction)}风 湿度${(realtime.humidity * 100).toFixed(0)}%`,//副标题
+
     `${keypoint}！
     
 ${alertInfo}${hourlySkycon}
-`,
-    {
-      "media-url": `${mapSkycon(realtime.skycon)[1]}`,
-    }
+`,//正文
+
   );
 }
 
@@ -356,8 +359,6 @@ function mapWind(speed, direction) {
   return `${d_description}风 ${description}`;
 }
 
-// 天气状况 --> 自然语言描述
-// icon来源：github@58xinian
 function mapSkycon(skycon) {
   const map = {
 CLEAR_DAY: ["日间晴朗"],
