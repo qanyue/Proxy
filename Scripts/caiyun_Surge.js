@@ -308,17 +308,17 @@ function mapWind(speed, direction) {
   } else if (speed <= 117) {
     description = "11级";
   } else if (speed <= 133) {
-    description = "12级 飓风";
+    description = "12级 飓";
   } else if (speed <= 149) {
-    description = "13级 台风";
+    description = "13级 台";
   } else if (speed <= 166) {
-    description = "14级 强台风";
+    description = "14级 强台";
   } else if (speed <= 183) {
-    description = "15级 强台风";
+    description = "15级 强台";
   } else if (speed <= 201) {
-    description = "16级 超强台风";
+    description = "16级 超强台";
   } else if (speed <= 220) {
-    description = "17级 超强台风";
+    description = "17级 超强台";
   }
 
   if (direction >= 348.76 || direction <= 11.25) {
