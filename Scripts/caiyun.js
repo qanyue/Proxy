@@ -424,6 +424,7 @@ function mapSkycon(skycon) {
       "暴雪",
       "https://raw.githubusercontent.com/58xinian/icon/master/Weather/HEAVY_SNOW",
     ],
+    FOG: ["雾"],
     DUST: ["浮尘"],
     SAND: ["沙尘"],
     WIND: ["大风"],
