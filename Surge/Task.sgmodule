@@ -3,8 +3,6 @@
 //name = type=cron, cronexp=cronexample, wake-system=1, timeout=180, script-path=javescript
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/Task.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Task.sgmodule
-[Rule]
-DOMAIN,rsshub.app,Proxy // EPIC
 [Script]
 # > 百度贴吧
 百度贴吧 = type=cron, cronexp=0 0 */12 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js
@@ -24,3 +22,5 @@ DOMAIN,rsshub.app,Proxy // EPIC
 滴滴出行 = type=cron, cronexp=55 59 23 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_reward.js
 # > 奈雪的茶
 奈雪的茶 = type=cron, cronexp=48 1 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
+# > 电信套餐查询
+电信套餐查询 = type=cron, cronexp=0 0 22 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js
