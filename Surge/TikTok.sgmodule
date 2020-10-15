@@ -1,5 +1,6 @@
 #!name=TikTok Unlock
 #!desc=TikTok Unlock.
+//raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/TikTok.sgmodule
 [URL Rewrite]
 (?<=_region=)CN(?=&) url 302 TW
 (?<=&app_version=)1[6-9]..(?=.?.?&) url 302 17..
