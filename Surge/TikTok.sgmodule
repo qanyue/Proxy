@@ -2,10 +2,10 @@
 #!desc=Remove TikTok's regional restrictions.
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/TikTok.sgmodule
 [URL Rewrite]
-(?<=_region=)CN(?=&) url 302 TW
-(?<=&app_version=)1[6-9]..(?=.?.?&) url 302 17..
-(?<=\?version_code=)1[6-9]..(?=.?.?&) url 302 17..
-(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
-(?<=&mcc_mnc=)4 url 302 2
+(?<=_region=)CN(?=&) url 307 TW
+(?<=&app_version=)1[6-9]..(?=.?.?&) url 307 17..
+(?<=\?version_code=)1[6-9]..(?=.?.?&) url 307 17..
+(.*video_id=\w{32})(.*watermark=)(.*) url 307 $1
+(?<=&mcc_mnc=)4 url 307 2
 [MITM]
 hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
