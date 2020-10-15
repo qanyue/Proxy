@@ -26,7 +26,5 @@
 滴滴出行 = type=http-request,pattern=^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
 # > 奈雪的茶
 奈雪的茶 = type=http-request,pattern=^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
-# > 电信余额提醒
-电信余额提醒 = type=http-request,pattern=^https?:\/\/e\.189\.cn\/store\/user\/balance_new\.do,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/10000.cookie.js
 [MITM]
-hostname = %APPEND% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, e.189.cn
+hostname = %APPEND% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com
