@@ -1,5 +1,5 @@
 #!name=Get Cookie All Time
-#!desc=Start to get cookies all the time, combined with their hostname.
+#!desc=Start to get cookies all time, combined with their hostname.
 //name = type=http-request, pattern=regex, script-path=javescript
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/Cookie_FullTime.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Cookie_FullTime.sgmodule
@@ -13,4 +13,3 @@ hostname = %INSERT% mwegame.qq.com, music.163.com, user-api-prd-mx.wandafilm.com
 # name === example
 # 掌上飞车 === mwegame.qq.com
 # 网易云音乐 === music.163.com
-# 电信余额 === e.189.cn
