@@ -1,6 +1,6 @@
 #!name=TikTok Unlock
 #!desc=TikTok Unlock.
-[Script]
+[URL Rewrite]
 (?<=_region=)CN(?=&) url 302 TW
 (?<=&app_version=)1[6-9]..(?=.?.?&) url 302 17..
 (?<=\?version_code=)1[6-9]..(?=.?.?&) url 302 17..
