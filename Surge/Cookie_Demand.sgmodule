@@ -21,12 +21,12 @@
 # > 电信余额提醒
 电信余额提醒 = type=http-request,pattern=^https?:\/\/e\.189\.cn\/store\/user\/balance_new\.do,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/10000.cookie.js
 [MITM]
-hostname = %INSERT% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, e.189.cn
-# name === example
-# 百度贴吧 === tieba.baidu.com
-# 微博 === pi.weibo.cn,pay.sc.weibo.com
-# 美团 === i.meituan.com
-# 饿了么 === h5.ele.me
-# 滴滴出行 === as.xiaojukeji.com
-# 奈雪的茶 === webapi.qmai.cn
-# 电信余额 === e.189.cn
+hostname = %APPEND% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, e.189.cn
+// name === example
+// 百度贴吧 === tieba.baidu.com
+// 微博 === pi.weibo.cn,pay.sc.weibo.com
+// 美团 === i.meituan.com
+// 饿了么 === h5.ele.me
+// 滴滴出行 === as.xiaojukeji.com
+// 奈雪的茶 === webapi.qmai.cn
+// 电信余额 === e.189.cn
