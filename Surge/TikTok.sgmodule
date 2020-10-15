@@ -1,5 +1,5 @@
 #!name=TikTok Unlock
-#!desc=TikTok Unlock.
+#!desc=Remove TikTok's regional restrictions.
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/TikTok.sgmodule
 [URL Rewrite]
 (?<=_region=)CN(?=&) url 302 TW
