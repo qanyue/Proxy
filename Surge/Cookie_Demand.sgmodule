@@ -29,4 +29,4 @@
 # > 
 电信套餐查询 = type=http-request,pattern=https?:\/\/e\.189\.cn\/store\/user\/package_detail\.do,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js
 [MITM]
-hostname = %APPEND% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com
+hostname = %APPEND% tieba.baidu.com, pi.weibo.cn,pay.sc.weibo.com, i.meituan.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn, api.weibo.cn, pay.sc.weibo.com, e.189.cn
