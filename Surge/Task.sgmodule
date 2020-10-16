@@ -4,7 +4,7 @@
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/Task.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Task.sgmodule
 [Script]
-# > 统一在每日 0 时 5 分开始执行签到类任务
+# > 统一在每日 00:05 -- 00:07 之间执行签到类任务
 # > 百度贴吧
 百度贴吧 = type=cron, cronexp=0 5 */12 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js
 # > 微博 & 微博钱包
