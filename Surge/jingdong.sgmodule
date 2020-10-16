@@ -1,6 +1,6 @@
 #!name=JD Tasks
 #!desc=This is a series of JD tasks and includes BoxJs TestFlight scripts.
-#!name = type=cron, cronexp=cronexample, wake-system=1, timeout=600, script-path=javescript
+//name = type=cron, cronexp=cronexample, wake-system=1, timeout=600, script-path=javescript
 #!github:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
 [Script]
