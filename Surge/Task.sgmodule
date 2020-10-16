@@ -4,23 +4,22 @@
 //github:https://github.com/chiupam/Proxy/blob/master/Surge/Task.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Task.sgmodule
 [Script]
+# > 统一在每日 0 时 5 分开始执行签到类任务
 # > 百度贴吧
-百度贴吧 = type=cron, cronexp=0 0 */12 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js
+百度贴吧 = type=cron, cronexp=0 5 */12 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js
 # > 微博 & 微博钱包
-微博 = type=cron,cronexp=0 1 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
+微博 = type=cron,cronexp=0 6 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
 # > 美团
-美团 = type=cron, cronexp=6 1 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js
+美团 = type=cron, cronexp=6 6 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js
 # > 饿了么
-饿了么 = type=cron, cronexp=12 1 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js
-饿了么 = type=cron, cronexp=12 1 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js
+饿了么 = type=cron, cronexp=12 6 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js
+饿了么 = type=cron, cronexp=12 6 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js
 # > 网易云音乐
-网易云音乐 = type=cron, cronexp=24 1 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js
+网易云音乐 = type=cron, cronexp=24 6 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js
 # > 掌上飞车
-掌上飞车 = type=cron, cronexp=30 1 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js
+掌上飞车 = type=cron, cronexp=30 6 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js
 # > 滴滴出行
-滴滴出行 = type=cron, cronexp=36 1 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
+滴滴出行 = type=cron, cronexp=36 6 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
 滴滴出行 = type=cron, cronexp=55 59 23 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_reward.js
 # > 奈雪的茶
-奈雪的茶 = type=cron, cronexp=48 1 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
-# > 电信套餐查询
-电信套餐查询 = type=cron, cronexp=0 0 22 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js
+奈雪的茶 = type=cron, cronexp=48 6 0 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
