@@ -26,16 +26,22 @@
 宠汪汪————第五次喂食 = type=cron, cronexp=0 1 15 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
 宠汪汪————第六次喂食 = type=cron, cronexp=0 4 18 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
 宠汪汪————第七次喂食 = type=cron, cronexp=0 7 21 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js
-# >> 东东农场(6、12、18时 0分)
-东东农场 = type=cron, cronexp=0 0 6-18/6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_fruit.js
-# >> 东东萌宠(6、12、18时 8分)
-东东萌宠 = type=cron, cronexp=0 8 6-18/6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_pet.js
+# >> 东东农场
+# >>> 首次耗时较长(06:00)
+东东农场————每日首次 = type=cron, cronexp=0 0 6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_fruit.js
+# >>> 其余时段耗时较短(12:00 18:00)
+东东农场————其余时段 = type=cron, cronexp=0 0 12-18/6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_fruit.js
+# >> 东东萌宠
+# >>> 首次耗时较长(06:08)
+东东萌宠————每日首次 = type=cron, cronexp=0 8 6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_pet.js
+# >>> 其余时段耗时较短(12:04 18:04)
+东东萌宠————其余时段 = type=cron, cronexp=0 4 12-18/6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_pet.js
 # >> 种豆得豆 (7-21时 奇数时 0分)
 种豆得豆 = type=cron, cronexp=15 0 7-21/2 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_plantBean.js
 # >> 天天加速(奇数时 5分)
 天天加速 = type=cron, cronexp=0 5 1-23/2 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_speed.js
 # >> 京小超(1、9、17时 8分)
-京小超 = type=cron, cronexp=0 8 1-23/8 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_superMarket.js
+京小超 = type=cron, cronexp=0 8 1-17/8 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_superMarket.js
 # >> 摇钱树(2、10、18时 10分)(Lv.15+)
 摇钱树 = type=cron, cronexp=0 10 2-18/8 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_moneyTree.js
 # >> 临时活动
