@@ -1,8 +1,8 @@
 #!name=Scripts
 #!desc=Personally organize the required scripts.
 //name = type=http-request,pattern=https,script-path=javescript
-//github:https://github.com/chiupam/Proxy/blob/master/Surge/Scripts.sgmodule
-//raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Scripts.sgmodule
+//GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Scripts.sgmodule
+//Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Scripts.sgmodule
 [Script]
 # 知乎
 Zhihunoredirect = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/noredirect.js

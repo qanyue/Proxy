@@ -1,7 +1,7 @@
 #!name=Tasks
 #!desc=Sign-in type task request.
 //name = type=cron, cronexp=cronexample, wake-system=1, timeout=180, script-path=javescript
-//github:https://github.com/chiupam/Proxy/blob/master/Surge/Task.sgmodule
+//GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Task.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Task.sgmodule
 [Script]
 # > 统一在每日 00:05 ---- 00:07 之间执行签到类任务
