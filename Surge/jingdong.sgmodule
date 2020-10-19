@@ -8,7 +8,7 @@
 # >> 获取来客有礼Cookie
 来客有礼Cookie type=http-request, pattern=https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\?, script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
 # >> 来客有礼
-来客有礼 = type=cron, cronexp=35 5 0 * * *,wake-system=1, time-out=600, script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
+来客有礼 = type=cron, cronexp=30 7 0 * * *,wake-system=1, time-out=600, script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
 # > 获取京东Cookie
 获取京东Cookie = type=http-request, pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 # > 京东系列
