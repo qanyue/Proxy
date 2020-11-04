@@ -12,7 +12,7 @@
 # >>> 京东京豆 {*/12:01} (双号执行时长大约180s左右)
 京豆 = type=cron, cronexp=0 1 */12 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 # >>> 京东京豆变动 {23:30}
-京豆变动通知 = type=cron,cronexp=30 23 * * *,wake-system=1,timeout=440,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_bean_change.js
+京豆变动通知 = type=cron, cronexp=30 23 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_bean_change.js
 # > 游戏系列
 # >>> 兑换类
 # >>>>> 宠汪汪兑换京豆 {08:00 16:00}
@@ -62,8 +62,8 @@
 进店领豆 = type=cron,cronexp=30 9 0 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_shop.js
 # >>> 天天加速(1-23/2:05)
 天天加速 = type=cron, cronexp=0 5 1-23/2 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_speed.js
-# >>> 手狂欢城
-京东手机狂欢城 = type=cron,cronexp=30 10 */6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_818.js
+# >>> 手机狂欢城
+手机狂欢城 = type=cron,cronexp=30 10 */6 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_818.js
 # >>> 星推官
 星推官 = type=cron, cronexp=0 0 0 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_xtg.js
 # > BoxJs TF
