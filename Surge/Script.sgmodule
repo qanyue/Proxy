@@ -1,11 +1,20 @@
 #!name=Scripts
 #!desc=Personally organize the required scripts.
-//name = type=http-request,pattern=https,script-path=javescript
+//name = type=http-request, pattern=https, requires-body=1, max-size=1, script-path=javescript, script-update-interval=0
+//name = type=http-response, pattern=https, requires-body=1, max-size=1, script-path=javescript, script-update-interval=0
 //GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Scripts.sgmodule
 //Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Scripts.sgmodule
+
 [Script]
-# 知乎
-Zhihunoredirect = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/noredirect.js
+# > 微博开屏广告(api.weibo.cn, mapi.weibo.com, *.uve.weibo.com)
+微博去开屏广告 = type=http-response, pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list|photo/info), requires-body=1, max-size=1, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js, script-update-interval=0
+微博去开屏广告 = type=http-response, pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua), requires-body=1, max-size=1, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js, script-update-interval=0
+# > 微信公众号底部广告(mp.weixin.qq.com)
+微信去公众号底部广告 = type=http-request, pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/WeChat.js, script-update-interval=0
+# > 中国联通轮播广告(m.client.10010.com)
+中国联通去轮播广告 = type=http-response, pattern=^https?://m.client.10010.com/uniAdmsInterface/getHomePageAd, requires-body=1, max-size=1, script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/china_unicom.js, script-update-interval=0
+# > WPS(account.wps.cn)
+WPS = type=http-response, pattern=^https?:\/\/account\.wps\.cn\/api\/users, requires-body=1, max-size=-1, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js, script-update-interval=0
 
 [MITM]
-hostname = link.zhihu.com
+hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, m.client.10010.com, account.wps.cn
