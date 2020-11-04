@@ -23,6 +23,7 @@
 东东超市————第一次 = type=cron, cronexp=0 0 0 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_blueCoin.js
 # >>>>> 第二次执行,可以执行完毕 {00:07}
 东东超市————第二次 = type=cron, cronexp=0 7 0 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_blueCoin.js
+
 # >>> 宠汪汪系列
 # >>>>> 辅助脚本
 聚宝盆辅助 = type=http-response, pattern=^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com\/\/pet\/getPetTreasureBox, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_petTreasureBox.js

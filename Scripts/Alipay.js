@@ -1,10 +1,10 @@
 const $ = new Env()
-const zhuangyuan = "alipays://platformapi/startapp?appId=66666674"
-const senlin = "alipay://platformapi/startapp?appId=60000002"
+const sl = "alipay://platformapi/startapp?appId=60000002"
+const zy = "alipays://platformapi/startapp?appId=66666674"
 
-$.notify("", "蚂蚁森林", "收能量", senlin)
+$.notify("支付宝", "蚂蚁森林", "收能量", sl)
 sleep(6000) // 1000=1S
-$.notify("", "蚂蚁庄园", "喂小鸡", zhuangyuan)
+$.notify("支付宝", "蚂蚁庄园", "喂小鸡", zy)
 $done()
 
 function sleep(milliSeconds) {
