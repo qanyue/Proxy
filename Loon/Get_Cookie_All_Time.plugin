@@ -1,0 +1,26 @@
+# Get Cookie Enable All Time
+
+[Script]
+
+# Format
+
+# name(hostname)
+# http-request https script-path=path, tag=name, enable=true
+
+# name(hostname)
+# http-response https script-path=path, timeout=600, requires-body=true, tag=name,enable=true
+
+########################
+
+# 掌上飞车(mwegame.qq.com)
+http-request ^https:\/\/mwegame\.qq\.com\/ams\/sign\/doSign\/month script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js, tag=掌上飞车, enable=true
+
+# 网易云音乐(music.163.com)
+http-request ^https:\/\/music.163.com\/weapi\/user\/level script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,requires-body=true, tag=网易云音乐, enable=true
+
+# 小米运动(account.huami.com)
+http-response ^https:\/\/account\.huami\.com\/v2\/client\/login script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/backUp/xmSports.js, requires-body=true, timeout=600, tag=小米运动, enable=true
+
+[MITM]
+
+hostname = mwegame.qq.com, music.163.com, e.189.cn, account.huami.com
