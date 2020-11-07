@@ -1,0 +1,49 @@
+
+{
+  "id": "chiupam.sub",
+  "name": "chiupam脚本订阅",
+  "author": "@chiupam",
+  "icon": "",
+  "repo": "https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/ShareCode.js",
+  "apps": [
+{
+      "id": "xmSports",
+      "name": "小米运动",
+      "keys": [
+        "bean_ShareCode",
+        "farm_ShareCode",
+        "pet_ShareCode"
+      ],
+      "settings": [
+        {
+          "id": "bean_ShareCode",
+          "name": "种豆得豆互助码",
+          "val": "",
+          "type": "text",
+          "desc": ""
+        },
+        {
+          "id": "farm_ShareCode",
+          "name": "东东农场互助码",
+          "val": "",
+          "type": "text",
+          "desc": ""
+        },
+        {
+          "id": "pet_ShareCode",
+          "name": "东东萌宠互助码",
+          "val": "",
+          "type": "text",
+          "desc": ""
+        }
+      ],
+      "author": "@chiupam",
+      "repo": "https://github.com/lxk0301/scripts",
+      "script": "https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/ShareCode.js",
+      "icons": [
+        "",
+        ""
+      ]
+    }
+  ]
+}
