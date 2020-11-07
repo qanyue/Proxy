@@ -27,3 +27,5 @@
 小米运动 = type=cron,cronexp=0 50 22 * * *, wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/backUp/xmSports.js
 # > 支付宝
 支付宝 = type=cron,cronexp=0 30 7 * * *, wake-system=1, timeout=180, script-path= https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/mayi.js
+# > 互助码
+上传互助码 = type=cron,cronexp=0 30 7 1,10,20 * *, wake-system=1, timeout=180, script-path= https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/ShareCode.js
