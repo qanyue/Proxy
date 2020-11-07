@@ -75,7 +75,7 @@
 天天加速 = type=cron, cronexp=0 5 1-23/2 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_speed.js
 
 # >>> 抽奖机
-京东抽奖机 = type=cron,cronexp=0 11 0 * * *,wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
+抽奖机 = type=cron,cronexp=0 11 0 * * *,wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
 
 # > 临时活动
 # >>> 手机狂欢城
