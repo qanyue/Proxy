@@ -7,8 +7,8 @@
   "repo": "https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/ShareCode.js",
   "apps": [
 {
-      "id": "xmSports",
-      "name": "小米运动",
+      "id": "ShareCode",
+      "name": "上传京东互助码",
       "keys": [
         "bean_ShareCode",
         "farm_ShareCode",
