@@ -1,0 +1,33 @@
+
+{
+  "id": "chiupam.sub",
+  "name": "chiupam脚本订阅",
+  "author": "@chiupam",
+  "icon": "",
+  "repo": "https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/ShareCode.js",
+  "apps": [
+    {
+      "id": "jdShareCode",
+      "name": "京东互助码",
+      "keys": ["@jd.sharecode"],
+      "settings": [
+        {
+          "id": "@jd.sharecode",
+          "name": "互助码",
+          "val": "[\n\t{\n\t\t\"ganme\": bean,\n\t\t\"ShareCode\": \"olmijoxgmjutyw3xraw4bu7jkcdvszaezqfffiq\"\n\t},\n\t{\n\t\t\"ganme\": farm,\n\t\t\"ShareCode\": \"118ef90ea2be4106ab45f3ff31c2a8f1\"\n\t},\n\t{\n\t\t\"ganme\": pet,\n\t\t\"ShareCode\": \"MTAxODc2NTEzNTAwMDAwMDAyNzQ1OTEzOQ==\"\n\t}\n]\n",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 5,
+          "desc": "京东互助码 (JSON 格式)"
+        }
+      ],
+      "author": "@chiupam",
+      "repo": "https://github.com/chiupam",
+      "icons": [
+        "",
+        ""
+      ],
+      "script": "https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/ShareCode.js"
+    }
+  ]
+}
