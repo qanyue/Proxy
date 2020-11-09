@@ -1,42 +1,48 @@
-let games = [
+let sharecode = [
     {
-        game: bean,
-        ShareCode: "olmijoxgmjutyw3xraw4bu7jkcdvszaezqfffiq",
+        code: "olmijoxgmjutyw3xraw4bu7jkcdvszaezqfffiq",
+        game: "bean",
     },
     {
-        game: farm,
-        ShareCode: "118ef90ea2be4106ab45f3ff31c2a8f1",
+        code: "73b9c21c192948c6b9202303439510d2",
+        game: "farm",
     },
     {
-        game: pet,
-        ShareCode: "MTAxODc2NTEzNTAwMDAwMDAyNzQ1OTEzOQ==",
+        code: "MTAxODc2NTEzNTAwMDAwMDAyNzQ1OTEzOQ==",
+        game: "pet",
     },
 ];
 
-const $ = API("ShareCode");
-if ($.read('games') !== undefined) {
-    games = JSON.parse($.read('games'));
+const $ = API("jdsharecode");
+if ($.read('sharecode') !== undefined) {
+    sharecode = JSON.parse($.read('sharecode'));
 }
 
-async function check(item) {
-    const { id, name } = item;
-    $.log(`正在检查：${item.id}...`);
+Promise.all(sharecode.map(async (item) => check(item))).then(() => $.done());
 
-    await $.http.get({ url: `http://api.turinglabs.net/api/v1/jd/${game}/create/${ShareCode}/` }).delay(1000).then(
+async function check(item) {
+    const { code, game } = item;
+    $.log(`正在检查：${item.code}...`);
+
+    await $.http.get({ url: `http://api.turinglabs.net/api/v1/jd/${game}/create/${code}/` }).delay(1000).then(
         (response) => {
             const obj = JSON.parse(response.body);
             if (obj.status == 'ok') {
                 let message = obj.result.messge;
 
 
-                $.log(JSON.stringify(response.body));
+
+
+
+
+            $.log(JSON.stringify(response.body));
 
                 $.notify(
                     `${game}`,
                     ``,
                     `${message}`,
                     {
-                        'open-url': `http://api.turinglabs.net/api/v1/jd/${game}/create/${ShareCode}/`
+                        'open-url': `http://api.turinglabs.net/api/v1/jd/${game}/create/${code}/`
                     }
                 );
             } else {
@@ -44,7 +50,7 @@ async function check(item) {
 
                 $.notify(
                     `${game}`,
-                    '获取失败',
+                    'message:success 则成功',
                     JSON.stringify(response.body)
                 );
             }
