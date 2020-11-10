@@ -36,16 +36,16 @@ async function check(item) {
             $.log(JSON.stringify(response.body));
 
                 $.notify(
-                    `互助游戏是 ${ch}`,
-                    `您的互助码是 ${code}`,
+                    `${ch}`,
+                    `${code}`,
                     `${notifition}`,
                 );
             } else {
                 $.log(JSON.stringify(response.body));
 
                 $.notify(
-                    `互助游戏是 ${ch}`,
-                    `您的互助码是 ${code}`,
+                    `${ch}`,
+                    `${code}`,
                     JSON.stringify(response.body)
                 );
             }
