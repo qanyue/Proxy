@@ -9,10 +9,10 @@
     {
       "id": "jdsharecode",
       "name": "京东互助码",
-      "keys": ["@jdsharecode.code"],
+      "keys": ["@ShareCode.code"],
       "settings": [
         {
-          "id": "@jdsharecode.code",
+          "id": "@ShareCode.code",
           "name": "互助码",
           "val": "[\n\t{\n\t\t\"code\":\" olmijoxgmjutyw3xraw4bu7jkcdvszaezqfffiq\",\n\t\t\"code\": \"bean\",\n\t\t\"ch\": \"种豆得豆\"\n\t},\n\t{\n\t\t\"code\":\" 118ef90ea2be4106ab45f3ff31c2a8f1\",\n\t\t\"game\": \"farm\",\n\t\t\"ch\": \"东东农场\"\n\t},\n\t{\n\t\t\"code\":\" MTAxODc2NTEzNTAwMDAwMDAyNzQ1OTEzOQ==\",\n\t\t\"game\": \"pet\",\n\t\t\"ch\": \"东东萌宠\"\n\t}\n]\n",
           "type": "textarea",
