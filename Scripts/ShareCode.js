@@ -1,3 +1,6 @@
+/*
+不用看了，老子不会写，抄的steam.js
+*/
 let sharecode = [
     {
         code: "sptv55gzcksfquzoq5k2ubuj4i",
