@@ -1,15 +1,18 @@
 let sharecode = [
     {
-        code: "olmijoxgmjutyw3xraw4bu7jkcdvszaezqfffiq",
+        code: "sptv55gzcksfquzoq5k2ubuj4i",
         game: "bean",
+        ch:"种豆得豆"
     },
     {
         code: "73b9c21c192948c6b9202303439510d2",
         game: "farm",
+        ch:"东东农场"
     },
     {
         code: "MTAxODc2NTEzNTAwMDAwMDAyNzQ1OTEzOQ==",
         game: "pet",
+        ch:"东东萌宠"
     },
 ];
 
@@ -21,36 +24,28 @@ if ($.read('sharecode') !== undefined) {
 Promise.all(sharecode.map(async (item) => check(item))).then(() => $.done());
 
 async function check(item) {
-    const { code, game } = item;
+    const { code, game, ch } = item;
     $.log(`正在检查：${item.code}...`);
 
     await $.http.get({ url: `http://api.turinglabs.net/api/v1/jd/${game}/create/${code}/` }).delay(1000).then(
         (response) => {
             const obj = JSON.parse(response.body);
-            if (obj.status == 'ok') {
-                let message = obj.result.messge;
-
-
-
-
-
+            if (obj.message == 'seccuss') {
+                let notifition = obj.result.messge;
 
             $.log(JSON.stringify(response.body));
 
                 $.notify(
-                    `${game}`,
-                    ``,
-                    `${message}`,
-                    {
-                        'open-url': `http://api.turinglabs.net/api/v1/jd/${game}/create/${code}/`
-                    }
+                    `互助游戏是 ${ch}`,
+                    `您的互助码是 ${code}`,
+                    `${notifition}`,
                 );
             } else {
                 $.log(JSON.stringify(response.body));
 
                 $.notify(
-                    `${game}`,
-                    'message:success 则成功',
+                    `互助游戏是 ${ch}`,
+                    `您的互助码是 ${code}`,
                     JSON.stringify(response.body)
                 );
             }
