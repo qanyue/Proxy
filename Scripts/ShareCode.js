@@ -16,7 +16,7 @@ let sharecode = [
     },
 ];
 
-const $ = API("jdsharecode");
+const $ = API("ShareCode");
 if ($.read('sharecode') !== undefined) {
     sharecode = JSON.parse($.read('sharecode'));
 }
