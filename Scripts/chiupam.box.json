@@ -4,7 +4,7 @@
   "name": "chiupam脚本订阅",
   "author": "@chiupam",
   "icon": "https://raw.githubusercontent.com/chiupam/Proxy/master/image.jpg",
-  "repo": "https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/ShareCode.js",
+  "repo": "https://github.com/chiupam/Proxy",
   "apps": [
     {
       "id": "jdsharecode",
