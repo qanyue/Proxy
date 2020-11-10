@@ -3,7 +3,7 @@
   "id": "chiupam.sub",
   "name": "chiupam脚本订阅",
   "author": "@chiupam",
-  "icon": "",
+  "icon": "https://raw.githubusercontent.com/chiupam/Proxy/master/image.jpg",
   "repo": "https://raw.githubusercontent.com/chiupam/Proxy/master/Scripts/ShareCode.js",
   "apps": [
     {
