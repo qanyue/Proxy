@@ -1,4 +1,4 @@
-#!name=JD Tasks
+#!name=JD Non-important Tasks
 #!desc=This is a Surge module about JD's non-important tasks. Use the GitHub address link. Please add this module as needed. Last updated: 2020-11-12 21:52
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong_unimportant.sgmodule
