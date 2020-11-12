@@ -1,5 +1,5 @@
 #!name=JD Tasks Gitee
-#!desc=This is a series of JD tasks and includes BoxJs TestFlight scripts, and will use Gitee's address.
+#!desc=This is a Surge module about JD's reward task. It uses Gitee address link and also includes Boxjs TF Javescript. Warning: This module is generally not updated! Last updated: 2020-11-12 21:52
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
