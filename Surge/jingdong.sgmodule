@@ -4,10 +4,12 @@
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
 [Script]
+# Update Time : 2020.11.12
+
 # > 获取京东Cookie
 获取京东Cookie = type=http-request, pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-# > 京东系列
+# > 京东京豆系列
 # >>> 取消关注 {23:59}
 取消关注 = type=cron, cronexp="0 59 23 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js
 # >>> 京东京豆 {*/12:01} (双号执行时长大约180s左右)
@@ -15,7 +17,7 @@
 # >>> 京东京豆变动 {23:58}
 京豆变动通知 = type=cron, cronexp="0 58 23 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_change.js
 
-# > 游戏系列
+# > 游戏京豆系列
 # >>> 兑换类
 # >>>>> 宠汪汪兑换京豆 {08:00 16:00}
 宠汪汪————兑换 = type=cron, cronexp="0 0 8-16/8 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_reward.js
@@ -54,33 +56,33 @@
 种豆得豆————其余时段 = type=cron, cronexp="0 0 7-21/2 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js
 
 # >>> 东东超市系列
-# >>>>> 凌晨时段可能上架蓝币货物 {00:06:12}
+# >>>>> 凌晨时段可能上架蓝币货物 {00:06}
 东东超市————每日首次 = type=cron, cronexp="12 6 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_superMarket.js
-# >>>>> 其余时段 {09:06:12 17:06:12}
+# >>>>> 其余时段 {09:06 17:06}
 东东超市————其余时段 = type=cron, cronexp="12 6 9-17/8 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_superMarket.js
 
-# >>> 摇京豆 {00:08:30}
+# >>> 摇京豆 {00:08}
 摇京豆 = type=cron,cronexp="30 8 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_club_lottery.js
 
 # >>> 全民开红包 {00:09}
 全民开红包 = type=cron,cronexp="0 9 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_redPacket.js
 
-# >>> 进店领豆 {00:09:30}
+# >>> 进店领豆 {00:09}
 进店领豆 = type=cron,cronexp="30 9 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_shop.js
 
 # >>> 天天加速 {1-23/2:05}
 天天加速 = type=cron, cronexp="0 5 1-23/2 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_speed.js
 
-# >>> 抽奖机 {00:11}
-抽奖机 = type=cron,cronexp="0 11 0 * * *",wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
+# >>> 抽奖机 {00:10}
+抽奖机 = type=cron,cronexp="0 10 0 * * *",wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
 
-# > 非领豆任务
-# >>> 天天提鹅 {*/3:20}
-天天提鹅 = type=cron, cronexp="20 */3 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_daily_egg.js
-# >>> 金融养猪 {*:15}
-=金融养猪, = type=cron, cronexp="15 * * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pigPet.js
-# >>> 摇钱树 {02:10 10:10 18:10} (Lv.15+)
-摇钱树 = type=cron, cronexp="0 10 2-18/8 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_moneyTree.js
+# > 非京豆任务
+# >>> 摇钱树 {02:11 10:11 18:11} (Lv.15+)
+摇钱树 = type=cron, cronexp="0 11 2-18/8 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_moneyTree.js
+# >>> 金融养猪 {*:12}
+=金融养猪, = type=cron, cronexp="0 12 * * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pigPet.js
+# >>> 天天提鹅 {*/3:14}
+天天提鹅 = type=cron, cronexp="0 14 */3 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_daily_egg.js
 
 # > 临时活动
 # >>> 排行榜 (2020.12.31结束)
