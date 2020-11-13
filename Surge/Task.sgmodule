@@ -1,5 +1,5 @@
 #!name=Tasks
-#!desc=Sign-in type task request.
+#!desc=This is a Surge module aabout login-type tasks, and the execution interval of each javescript is usually 5 seconds.
 //name = type=cron, cronexp="cronexample", wake-system=1, timeout=180, script-path=javescript
 //GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Task.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Task.sgmodule
