@@ -1,8 +1,8 @@
 #!name=JD Bean Tasks
 #!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-11-19 16:59
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
-#!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
-#!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
+#!GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/jingdong.sgmodule
+#!Raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/jingdong.sgmodule
 [Script]
 # > Last Update Instructions
 # >>> 移除 "东东萌宠" 脚本（没有京豆），修改 "京豆变动" 脚本执行时间
