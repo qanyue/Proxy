@@ -1,11 +1,11 @@
 #!name=JD Bean Tasks
-#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-11-19 17:53
+#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-11-19 18:02
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/jingdong.sgmodule
 [Script]
 # > Last Update Instructions
-# >>> 增加 "boxjs.net" 的域名，防止被劫持
+# >>> 增加 "boxjs.net" 的重定向以及域名，防止被劫持
 
 # > 获取京东Cookie (获取地址 : bean.m.jd.com)
 获取京东Cookie = type=http-request, pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
@@ -74,5 +74,10 @@
 
 # > BoxJs TF (打开地址 : boxjs.net)
 BoxJs = type=http-request, pattern=^https?://boxjs.net, script-path=https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+
+[URL Rewrite]
+^https://boxjs.net http://boxjs.net 302
+
 [MITM]
 hostname = %APPEND% api.m.jd.com, jdjoy.jd.com, draw.jdfcloud.com, boxjs.net
+
