@@ -12,7 +12,7 @@
 东东萌宠 = type=cron, cronexp="0 8 6-18/6 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pet.js
 # >>> 摇钱树 {02:11 10:11 18:11} (Lv.15+)
 摇钱树 = type=cron, cronexp="0 11 2,9,19 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_moneyTree.js
-# >>> 金融养猪 {*:12}
+# >>> 金融养猪 {*/3:12}
 金融养猪 = type=cron, cronexp="0 12 */3 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pigPet.js
 # >>> 天天提鹅 {*/3:14}
 天天提鹅 = type=cron, cronexp="0 14 */3 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_daily_egg.js
