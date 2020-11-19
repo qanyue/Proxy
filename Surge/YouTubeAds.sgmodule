@@ -1,6 +1,7 @@
 #!name=YouTube
 #!desc=Remove YouTube Ads
-//Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/YouTubeAds.sgmodule
+//GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/YouTubeAds.sgmodule
+//raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/YouTubeAds.sgmodule
 [Rule]
 URL-REGEX,^https:\/\/.+\.googlevideo\.com\/.+&oad,REJECT
 
