@@ -4,7 +4,7 @@ Host: mwegame.qq.com
 chavyleung github: https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js
 RAW: https://raw.githubusercontent.com/chiupam/Proxy/individual/Scripts/QQspeed.js
 */
-var appName = '掌上飞车'
+var appName = ''
 var speed = init()
 var URL = speed.getdata("UrlFC")
 var KEY = speed.getdata("CookieFC")
@@ -81,7 +81,7 @@ function sign() {
     let detail = ''
     const obj = JSON.parse(data)
     if (obj.status == 1 && obj.data == 1) {
-      subTitle = `掌上飞车`
+      subTitle = ``
     } else if (obj.status == 11 && obj.data == false) {
       subTitle = `掌上飞车`
       detail = `签到结果: ${obj.message}`
