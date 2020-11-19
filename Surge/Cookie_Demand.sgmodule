@@ -1,8 +1,8 @@
 #!name=Get Cookie in Need
 #!desc=Start to get cookies in need, combined with their hostnames.
 #!tag = type=http-request,pattern=https,script-path=javescript
-#!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Cookie_Demand.sgmodule
-#!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Cookie_Demand.sgmodule
+#!GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/Cookie_Demand.sgmodule
+#!Raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/Cookie_Demand.sgmodule
 [Script]
 # > 百度贴吧(tieba.baidu.com)
 百度贴吧 = type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js

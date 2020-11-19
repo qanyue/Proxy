@@ -2,8 +2,8 @@
 #!desc=Personally organize the required scripts.
 //name = type=http-request, pattern=https, requires-body=1, max-size=1, script-path=javescript, script-update-interval=0
 //name = type=http-response, pattern=https, requires-body=1, max-size=1, script-path=javescript, script-update-interval=0
-//GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Script.sgmodule
-//Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Script.sgmodule
+//GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/Script.sgmodule
+//Raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/Script.sgmodule
 
 [Script]
 # > 微博开屏广告(api.weibo.cn, mapi.weibo.com, *.uve.weibo.com)

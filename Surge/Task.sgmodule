@@ -1,8 +1,8 @@
 #!name=Tasks
 #!desc=This is a Surge module aabout login-type tasks, and the execution interval of each javescript is usually 5 seconds.
 //name = type=cron, cronexp="cronexample", wake-system=1, timeout=180, script-path=javescript
-//GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/Task.sgmodule
-//raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/Task.sgmodule
+//GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/Task.sgmodule
+//raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/Task.sgmodule
 [Script]
 # > 统一在每日凌晨零点五分之内执行完所有的签到类任务
 # > 百度贴吧
