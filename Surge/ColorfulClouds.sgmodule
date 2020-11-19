@@ -1,5 +1,7 @@
 #!name=ColorfulClouds
 #!desc=Push real-time weather information based on ColorfulClouds API.
+//GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/ColorfulClouds.sgmodule
+//raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/ColorfulClouds.sgmodule
 [MITM]
 hostname = %INSERT% weather-data.apple.com, api.weather.com
 [Script]
