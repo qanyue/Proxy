@@ -1,17 +1,19 @@
 #!name=JD Non-important Tasks
-#!desc=This is a Surge module about JD's non-important tasks. Use the GitHub address link. Please add this module as needed. Last updated: 2020-11-18 23:52
+#!desc=This is a Surge module about JD's non-important tasks. Use the GitHub address link. Please add this module as needed. Last updated: 2020-11-19 16:59
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong_unimportant.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong_unimportant.sgmodule
 
 [Script]
 # > Last Update Instructions
-# >>> 新增 "东东工厂" 脚本
+# >>> 新增 "东东萌宠" 脚本
 # > 非京豆任务
+# >>> 东东萌宠 {06:08 12:08 18:08} 
+东东萌宠 = type=cron, cronexp="0 8 6-18/6 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pet.js
 # >>> 摇钱树 {02:11 10:11 18:11} (Lv.15+)
-摇钱树 = type=cron, cronexp="0 11 2-18/8 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_moneyTree.js
+摇钱树 = type=cron, cronexp="0 11 2,9,19 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_moneyTree.js
 # >>> 金融养猪 {*:12}
-金融养猪 = type=cron, cronexp="0 12 * * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pigPet.js
+金融养猪 = type=cron, cronexp="0 12 */3 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pigPet.js
 # >>> 天天提鹅 {*/3:14}
 天天提鹅 = type=cron, cronexp="0 14 */3 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_daily_egg.js
 # >>> 东东工厂 {*/3:16}
