@@ -74,7 +74,7 @@ function getcookie() {
    
 function sign() {
   const url = { url: URL, headers: JSON.parse(KEY) }
-  speed.get(url, (error, response, data) => {
+  speed.get(url, (_error, _response, data) => {
     speed.log(`${appName}, data: ${data}`)
     const title = `${appName}`
     let subTitle = ''
