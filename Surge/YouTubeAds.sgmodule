@@ -1,5 +1,5 @@
-#!name=YouTube
-#!desc=Remove YouTube Ads
+#!name=YouTube Ads
+#!desc=Use this module to remove the first 5 second ads of YouTube videos.
 //GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/YouTubeAds.sgmodule
 //raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/YouTubeAds.sgmodule
 [Rule]
