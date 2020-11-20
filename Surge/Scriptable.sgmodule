@@ -1,5 +1,5 @@
-#!name=Scriptable
-#!desc=Personally organize the required scripts.
+#!name=Scriptable Software
+#!desc=This is a Surge module that is enabled on demand when using Scriptable software.
 //name = type=http-request, pattern=https, requires-body=1, max-size=1, script-path=javescript, script-update-interval=0
 //name = type=http-response, pattern=https, requires-body=1, max-size=1, script-path=javescript, script-update-interval=0
 //GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/Scriptable.sgmodule
