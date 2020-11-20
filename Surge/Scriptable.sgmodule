@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #!name=Scriptable
 #!desc=This is a Surge module that needs to be used with Scriptable software. Please do not enable this module unless necessary.
+=======
+#!name=Scriptable Software
+#!desc=This is a Surge module that is enabled on demand when using Scriptable software.
+>>>>>>> 807bed15e11e3a46e487251e8561fb42ab4e5a6d
 //name = type=http-request, pattern=https, requires-body=1, max-size=1, script-path=javescript, script-update-interval=0
 //name = type=http-response, pattern=https, requires-body=1, max-size=1, script-path=javescript, script-update-interval=0
 //GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/Scriptable.sgmodule
