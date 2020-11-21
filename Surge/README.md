@@ -14,7 +14,7 @@
 
 - [jingdong.sgmodule](https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule)
 
-  - 京东任何能领取京豆的任务模块, 使用 github 地址, 该模块更新频率较块
+  - 京东任何能领取京豆的任务模块, 使用 github 地址, 该模块更新频率较快
 
 - [price.sgmodule](https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/price.sgmodule)
 
