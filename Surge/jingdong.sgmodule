@@ -1,11 +1,11 @@
 #!name=JD Bean Tasks
-#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-11-21 21:19
+#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-11-21 23:25
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/jingdong.sgmodule
 [Script]
 # > Last Update Instructions
-# >>> 增加 "东东小窝" 脚本
+# >>> 重写 "宠汪汪" 全部喂食脚本的执行时间, 更符合实际情况
 
 # > 获取京东Cookie (获取地址 : bean.m.jd.com)
 获取京东Cookie = type=http-request, pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
