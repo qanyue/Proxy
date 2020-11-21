@@ -46,7 +46,7 @@
 
 # >>> 种豆得豆系列
 # >>>>> 凌晨时段可以领取一瓶营养液 {00:08}
-种豆得豆————凌晨时段 type=cron, cronexp="0 8 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js
+种豆得豆————凌晨时段 = type=cron, cronexp="0 8 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js
 # >>>>> 其余时段 {22,7-21/2:00}
 种豆得豆————整点时段 = type=cron, cronexp="0 0 22,7-21/2 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js
 
