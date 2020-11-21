@@ -1,4 +1,4 @@
-#!name=JD Tasks Gitee
+#!name=JingDong Bean Tasks (Gitee)
 #!desc=INDIVIDUAL
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
