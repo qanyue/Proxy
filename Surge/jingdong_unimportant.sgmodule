@@ -1,4 +1,4 @@
-#!name=JingDong Non-important Tasks
+#!name=JingDong No Bean Tasks
 #!desc=INDIVIDUAL
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/jingdong_unimportant.sgmodule

@@ -1,5 +1,5 @@
 #!name=Get Cookie All Time
-#!desc=Start to get cookies all time, combined with their hostname.
+#!desc=INDIVIDUAL
 #!tag = type=http-request, pattern=regex, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/Cookie_FullTime.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/Cookie_FullTime.sgmodule

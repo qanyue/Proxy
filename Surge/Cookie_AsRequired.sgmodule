@@ -1,5 +1,5 @@
 #!name=Get Cookie in Need
-#!desc=Start to get cookies in need, combined with their hostnames.
+#!desc=INDIVIDUAL
 #!tag = type=http-request,pattern=https,script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/Cookie_AsRequired.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/Cookie_AsRequired.sgmodule
