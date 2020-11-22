@@ -2,8 +2,8 @@
 #!desc=This is a Surge module used to collect the JaveScripts on historical price of Jingdong and Taobao.
 //name = type=http-request, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //name = type=http-response, pattern=regex, requires-body=1, max-size=0, script-path=javescript
-//GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/Price.sgmodule
-//Raw:https://raw.githubusercontent.com/chiupam/Proxy/individual/Surge/Price.sgmodule
+//GitHub:https://github.com/chiupam/Proxy/blob/lvy/Surge/Price.sgmodule
+//Raw:https://raw.githubusercontent.com/chiupam/Proxy/lvy/Surge/Price.sgmodule
 [Script]
 # > Taobao Historical Price
 # >> Please reinstall Taobao if the JaveScript is not valid or invalid.
