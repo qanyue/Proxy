@@ -1,4 +1,4 @@
-#!name=JD Bean Tasks (INDIVIDUAL)
+#!name=JD Bean Tasks (Individual)
 #!desc=This is a Surge module used to collect JaveScripts on JD to obtain beans.
 #!tag = type=cron, cronexp="cronexample", wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/jingdong.sgmodule

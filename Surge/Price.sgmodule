@@ -1,4 +1,4 @@
-#!name=Historical Price (INDIVIDUAL)
+#!name=Historical Price (Individual)
 #!desc=This is a Surge module used to collect the JaveScripts on historical price of Jingdong and Taobao.
 //name = type=http-request, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //name = type=http-response, pattern=regex, requires-body=1, max-size=0, script-path=javescript
