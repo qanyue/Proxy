@@ -27,6 +27,6 @@
 # > 支付宝
 支付宝 = type=cron,cronexp="0 30 7 * * *", wake-system=1, timeout=180, script-path=AliPay.js
 # > 互助码
-互助码 = type=cron,cronexp="0 30 7 1,10,20 * *", wake-system=1, timeout=180, script-path=ShareCode_Chiupam.js
-互助码 = type=cron,cronexp="0 30 7 1,10,20 * *", wake-system=1, timeout=180, script-path=ShareCode_Vivi.js
+Chiupam —— 互助码 = type=cron,cronexp="0 30 7 1,10,20 * *", wake-system=1, timeout=180, script-path=ShareCode_Chiupam.js
+Vivi —— 互助码 = type=cron,cronexp="0 30 7 1,10,20 * *", wake-system=1, timeout=180, script-path=ShareCode_Vivi.js
 互助码统计 = type=cron,cronexp="0 30 7 1,10,20 * *", wake-system=1, timeout=180, script-path=ShareCode_Count.js
