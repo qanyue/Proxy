@@ -19,8 +19,7 @@
 # > 掌上飞车
 掌上飞车 = type=cron, cronexp="45 5 0 * * *", wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/chiupam/Proxy/individual/Scripts/QQspeed.js
 # > 滴滴出行
-滴滴出行———每日签到 = type=cron, cronexp="50 5 0 * * *", wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
-滴滴出行———福利金 = type=cron, cronexp="55 59 23 * * *", wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_reward.js
+滴滴出行———每日签到 = type=cron, cronexp="50 5 0 * * *", wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js
 # > 奈雪的茶
 奈雪的茶 = type=cron, cronexp="55 5 0 * * *", wake-system=1, timeout=180, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
 # > 小米运动
