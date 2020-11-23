@@ -21,7 +21,7 @@
 东东超市——兑换京豆 = type=cron, cronexp="59 59 23 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_blueCoin.js
 
 # >>> 宠汪汪系列
-# >>>>> 偷粮 {00:04 06:04}
+# >>>>> 偷粮 {05:59}
 宠汪汪——偷粮 = type=cron,cronexp="55 59 5 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_steal.js
 # >>>>> 喂食 (不追求每日"8"次全部成功,单独分"7"次执行,以确保成功喂食，从早上开始每次喂食间隔 183 分钟)
 # >>> 早餐{06:00-10:30} 午餐{11:30-15:00} 晚餐{19:00-21:00}
