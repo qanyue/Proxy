@@ -1,5 +1,5 @@
-#!name=Historical Price (Individual)
-#!desc=This is a Surge module used to collect the JaveScripts on historical price of Jingdong and Taobao.
+#!name=京东历史价格
+#!desc=如果觉得进京东商品页有点慢, 可以关闭这个模块.
 //name = type=http-request, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //name = type=http-response, pattern=regex, requires-body=1, max-size=0, script-path=javescript
 //GitHub:https://github.com/chiupam/Proxy/blob/lvy/Surge/Price.sgmodule
