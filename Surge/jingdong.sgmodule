@@ -1,13 +1,15 @@
 #!name=京东领豆任务合集 (GitHub)
-#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-11-23 18:30
+#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-11-23 19:21
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
 [Script]
 # > 上次更新的内容
-# >>> 继续优化 "宠汪汪喂食" 系列脚本的执行时间
+# >>> 修改了一些使用说明
 
-# > 获取京东Cookie (获取地址 : bean.m.jd.com)
+# > 获取京东Cookie 
+# >>> 获取地址在下方,复制到浏览器打开,使用手机号登陆,点击签到即可
+#bean.m.jd.com
 获取京东Cookie = type=http-request, pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 # > 京东京豆系列
@@ -75,7 +77,9 @@
 # >>> 排行榜 (2020.12.31结束)
 排行榜 = type=cron,cronexp="0 13 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js
 
-# > BoxJs TF (打开地址 : boxjs.net)
+# > BoxJs TF 
+# >>> 地址在下方,复制到浏览器打开即可
+#boxjs.net
 Rewrite: BoxJs = type=http-request, pattern=^https?://boxjs.net, script-path=https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js, requires-body=true, timeout=120
 
 [MITM]
