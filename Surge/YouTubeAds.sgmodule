@@ -1,5 +1,5 @@
-#!name=YouTube Ads
-#!desc=This is a Surge module used to collect JaveScripts on Remove YouTube Ads. YouTube Version: 15.44.2.
+#!name=去除 YouTube 视频内的 5 秒广告
+#!desc=去除 YouTube 视频内的 5 秒广告, 千万不要更新 YouTube. YouTube Version: 15.44.2.
 #!GitHub:https://github.com/chiupam/Proxy/blob/lvy/Surge/YouTubeAds.sgmodule
 #!raw:https://raw.githubusercontent.com/chiupam/Proxy/lvy/Surge/YouTubeAds.sgmodule
 [Rule]

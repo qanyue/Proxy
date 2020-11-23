@@ -1,5 +1,5 @@
-#!name=Get Cookie in Need
-#!desc=This is a Surge module used to collect JaveScripts on Get Cookie As You Need.
+#!name=Get Cookie
+#!desc=需要获取 Cookie 的时候开启该模块即可.
 #!tag = type=http-request, pattern=https, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/lvy/Surge/Cookie_AsRequired.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/lvy/Surge/Cookie_AsRequired.sgmodule
