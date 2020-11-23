@@ -1,4 +1,4 @@
-#!name=Tasks
+#!name=Tasks Module
 #!desc=This is a Surge module used to collect JaveScripts on daily task.
 #!tag = type=cron, cronexp="cronexample", wake-system=1, timeout=180, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/individual/Surge/Task.sgmodule
