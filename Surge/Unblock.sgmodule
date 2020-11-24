@@ -1,4 +1,4 @@
-#!name=Unblock Software SVIP Module
+#!name=Unblock Module
 #!desc=This is a Surge module used to collect JaveScripts on hacking, and it will use local resources.
 #!tag = type=http-request, pattern=https, requires-body=1, max-size=1, script-path=javescript, script-update-interval=0
 #!tag = type=http-response, pattern=https, requires-body=1, max-size=1, script-path=javescript, script-update-interval=0
