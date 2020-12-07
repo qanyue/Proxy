@@ -87,7 +87,7 @@
 
 # >>> 秒杀红包雨 (2020.12.31结束)
 # >>>>> 活动入口：首页--秒杀--下拉--狂撒 2 亿京豆
-秒杀红包雨 = type=cron, cronexp="0 09 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js
+秒杀红包雨 = type=cron, cronexp="0 9 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js
 
 # > BoxJs TF 
 # >>> 地址在下方,复制到浏览器打开即可
