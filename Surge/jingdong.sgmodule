@@ -1,5 +1,5 @@
 #!name=京东领豆任务合集 (GitHub)
-#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-12-07 18:52
+#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-12-07 18:58
 #!tag = type=cron, cronexp="cronexample", wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
@@ -82,6 +82,13 @@
 # >>> 十元街 {00:10}
 十元街 = type=cron, cronexp="0 10 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js
 
+# >>> 京东快递签到 {00:10}
+京东快递签到 = type=cron, cronexp="30 10 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
+
+# >>> 京东代属 {07:09}
+# >>>>> 此脚本有些用户无法获得京豆, 请忽视!
+京东代属 = type=cron, cronexp="30 9 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ds.js
+
 # >>> 领京豆额外奖励 {07:10}
 # >>>>> 活动入口：首页--领京豆
 领京豆额外奖励 = type=cron, cronexp="0 10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js
@@ -89,13 +96,6 @@
 # >>> 京东汽车 {07:10}
 # >>>>> 活动入口：首页--京东汽车--屏幕右中部--车主福利
 京东汽车 = type=cron, cronexp="30 10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js
-
-# >>> 京东快递签到 {00:10}
-京东快递签到 = type=cron, cronexp="30 10 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
-
-# >>> 京东代属 {07:09}
-# >>>>> 此脚本有些用户无法获得京豆, 请忽视!
-京东代属 = type=cron, cronexp="30 9 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ds.js
 
 # > 临时活动
 # >>> 金榜年终奖 (2020.12.12结束)
