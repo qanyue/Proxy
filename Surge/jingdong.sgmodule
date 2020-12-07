@@ -99,10 +99,10 @@
 
 # > 临时活动
 # >>> 数码加购京豆 (2020.12.11结束)
-数码加购京豆 = type=cron, cronexp="0 10 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_digital_floor.js
+数码加购京豆 = type=cron, cronexp="0 11 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_digital_floor.js
 
 # >>> 金榜年终奖 (2020.12.12结束)
-金榜年终奖 = type=cron, cronexp="0 10 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js
+金榜年终奖 = type=cron, cronexp="30 11 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js
 
 # >>> 排行榜 (2020.12.31结束)
 排行榜 = type=cron,cronexp="0 13 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_rankingList.js
