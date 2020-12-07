@@ -14,32 +14,19 @@
 # >>> 宠汪汪系列
 # >>>>> 偷粮 {05:59}
 宠汪汪——偷粮 = type=cron,cronexp="55 59 5 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_steal.js
-
-# >>> 京东汽车
-京东汽车 = type=cron, cronexp="0 7 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js
-
-# >>> 京东快递签到
-京东快递签到 = type=cron, cronexp="0 9 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
+# >>>>> 喂食
+# >>> 早餐{06:00-10:30} 午餐{11:30-15:00} 晚餐{19:00-21:00}
+宠汪汪——首次 = type=cron, cronexp="0 30 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy.js
+宠汪汪——起床 = type=cron, cronexp="0 51 5 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
+宠汪汪——早餐 = type=cron, cronexp="0 54 8 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy.js
+宠汪汪——午餐 = type=cron, cronexp="0 57 11 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
+宠汪汪——零食 = type=cron, cronexp="0 1 15 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
+宠汪汪——晚餐 = type=cron, cronexp="0 4 18 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
+宠汪汪——宵夜 = type=cron, cronexp="0 7 21 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
 
 # >>> 京东赚赚 {00:09}
 京东赚赚 = type=cron, cronexp="0 0 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js
 京东赚赚获取 Cookie = type=http-request, pattern=^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex, requires-body=0, max-size=0, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
-
-# >>> 东东小窝 {00：11}
-东东小窝 = type=cron, cronexp="30 11 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_woHome.js
-
-# >>> 领京豆额外奖励 {00:12}
-领京豆额外奖励 = type=cron, cronexp="0 12 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js
-
-# > 临时活动
-# >>> 秒杀红包雨 (2020.12.31结束)
-秒杀红包雨 = type=cron, cronexp="0 9 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js
-
-# >>> 健康抽奖机 (2020.12.31)
-健康抽奖机 = type=cron, cronexp="0 8 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js
-
-# >>> 金榜年终奖
-金榜年终奖 = type=cron, cronexp="0 6 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js
 
 # > BoxJs TF
 BoxJs = type=http-request, pattern=^https?://boxjs.net, script-path=https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js, requires-body=true, timeout=120
