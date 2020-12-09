@@ -85,9 +85,6 @@
 # >>> 京东快递签到 {00:10}
 京东快递签到 = type=cron, cronexp="30 10 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
 
-# >>> 苹果抽奖机 (2020.12.14结束)
-苹果抽奖机 = type=cron, cronexp="0 11 0 * * *", wake-system=1, timeout=600, script-path= https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_apple_live.js
-
 # >>> 京东代属 {07:09}
 # >>>>> 此脚本有些用户无法获得京豆, 请忽视!
 京东代属 = type=cron, cronexp="30 9 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ds.js
@@ -106,6 +103,9 @@
 
 # >>> 金榜年终奖 (2020.12.12结束)
 金榜年终奖 = type=cron, cronexp="30 11 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js
+
+# >>> 苹果抽奖机 (2020.12.14结束)
+苹果抽奖机 = type=cron, cronexp="0 11 0 * * *", wake-system=1, timeout=600, script-path= https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_apple_live.js
 
 # >>> 排行榜 (2020.12.31结束)
 排行榜 = type=cron,cronexp="0 13 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_rankingList.js
