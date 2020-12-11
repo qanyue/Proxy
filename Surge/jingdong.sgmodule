@@ -1,12 +1,12 @@
 #!name=京东领豆任务合集 (GitHub)
-#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-12-09 19:00
+#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-12-11 09:38
 #!tag = type=cron, cronexp="cronexample", wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
 [Script]
 # > 上次更新的内容
 # >>> 增加 "领取京豆额外奖励" & "京东汽车" & "京东快递签到" & "京东代属" 四个长期脚本, 其中 "京东代属" 脚本有部分用户无法获得京豆, 请忽视!
-# >>> 增加 "金榜年终奖" & "健康抽奖机" & "苹果抽奖机" & "PUBG" & "直播红包雨" & "秒杀红包雨" & "数码加购京豆" 七个短期脚本, 具体截止时间查看下方脚本备注即可
+# >>> 增加 "京东直播" & "金榜年终奖" & "健康抽奖机" & "苹果抽奖机" & "PUBG" & "直播红包雨" & "秒杀红包雨" & "数码加购京豆" 八个短期脚本, 具体截止时间查看下方脚本备注即可
 
 # > 获取京东Cookie 
 # >>> 获取地址在下方,复制到浏览器打开,使用手机号登陆,点击签到即可
@@ -98,6 +98,9 @@
 京东汽车 = type=cron, cronexp="30 10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js
 
 # > 临时活动
+# >>> 京东直播 (结束时间未知)
+京东直播 = type=cron, cronexp="0 10,15,20 12 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live.js
+
 # >>> 数码加购京豆 (2020.12.11结束)
 数码加购京豆 = type=cron, cronexp="0 11 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_digital_floor.js
 
