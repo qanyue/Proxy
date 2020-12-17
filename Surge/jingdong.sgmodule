@@ -1,12 +1,12 @@
 #!name=京东领豆任务合集 (GitHub)
-#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-12-17 09:40
+#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-12-17 19:15
 #!tag = type=cron, cronexp="cronexample", wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
 [Script]
 # > 上次更新的内容
-# >>> 新增 "看一看" 临时活动脚本 结束时间未知
-# >>> 删除 "数码加购京豆" & "金榜年终奖" & "秒杀红包雨" & "PUBG" & "苹果抽奖机" 脚本, 原因:活动到期
+# >>> 新增 "看一看" 临时活动脚本, 结束时间未知
+# >>> 修改 “京东赚赚” 脚本的远程链接
 
 # > 获取京东Cookie 
 # >>> 获取地址在下方,复制到浏览器打开,使用手机号登陆,点击签到即可
@@ -60,9 +60,7 @@
 摇京豆 = type=cron,cronexp="30 6 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_club_lottery.js
 
 # >>> 京东赚赚 {00:07}
-# >>>>> 打开微信, 搜索 "京东赚赚" 小程序即可获取 Cookie, 如果获取失败尝试杀掉微信后台重新一次获取
-京东赚赚 = type=cron, cronexp="0 0 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js
-京东赚赚获取 Cookie = type=http-request, pattern=^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex, requires-body=0, max-size=0, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
+京东赚赚 = type=cron, cronexp="0 0 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdzz.js
 
 # >>> 全民开红包 {00:08}
 全民开红包 = type=cron,cronexp="0 8 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_redPacket.js
