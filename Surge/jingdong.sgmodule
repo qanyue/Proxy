@@ -1,12 +1,11 @@
 #!name=京东领豆任务合集 (GitHub)
-#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-12-23 19:12
+#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-12-26 22:50
 #!tag = type=cron, cronexp="cronexample", wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
 [Script]
 # > 上次更新的内容
-# >>> 新增 "疯狂的Joy" 临时活动脚本, 结束时间未知
-# >>> 修改 “京东赚赚” 脚本的远程链接
+# >>> 新增 "疯狂的Joy" & '超级直播间红包雨' 临时活动脚本, 结束时间未知
 
 # > 获取京东Cookie 
 # >>> 获取地址在下方,复制到浏览器打开,使用手机号登陆,点击签到即可
@@ -96,6 +95,9 @@
 京东汽车 = type=cron, cronexp="30 10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js
 
 # > 临时活动
+# >>> 超级直播间红包雨 (截止日期不清楚)
+超级直播间红包雨 = type=cron, cronexp="0 30,31 20-23/1 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/shylocks/jd_scripts/raw/once/jd_live_redRain_26.js
+
 # >>> 疯狂的Joy (截止日期不清楚)
 疯狂的Joy = type=cron, cronexp="10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_crazy_joy.js
 
