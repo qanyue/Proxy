@@ -82,10 +82,6 @@
 # >>> 京东快递签到 {00:10}
 京东快递签到 = type=cron, cronexp="30 10 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
 
-# >>> 京东代属 {07:09}
-# >>>>> 此脚本有些用户无法获得京豆, 请忽视!
-京东代属 = type=cron, cronexp="30 9 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ds.js
-
 # >>> 领京豆额外奖励 {07:10}
 # >>>>> 活动入口：首页--领京豆
 领京豆额外奖励 = type=cron, cronexp="0 10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js
@@ -100,9 +96,6 @@
 
 # >>> 疯狂的Joy (截止日期不清楚)
 疯狂的Joy = type=cron, cronexp="10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_crazy_joy.js
-
-# >>> 看一看 (活动结束时间为止)
-看一看 = type=cron, cronexp="0 10-20/2 9 * * * ", wake-system=1, timeout=1800, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js
 
 # > BoxJs TF 
 # >>> 地址在下方,复制到浏览器打开即可
