@@ -1,11 +1,11 @@
 #!name=京东领豆任务合集 (GitHub)
-#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2021-01-10 20:00
+#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2021-01-11 23:35
 #!tag = type=cron, cronexp="cronexample", wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
 [Script]
 # > 上次更新的内容
-# >>> 新增 "口袋书店" 脚本
+# >>> 新增 "签到领现金" & "京喜签到" 脚本
 
 # > 获取京东Cookie 
 # >>> 获取地址在下方,复制到浏览器打开,使用手机号登陆,点击签到即可
@@ -83,6 +83,12 @@
 
 # >>> 京东快递签到 {00:10}
 京东快递签到 = type=cron, cronexp="30 10 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
+
+# >>> 签到领现金 {00:11}
+签到领现金 = type=cron, cronexp="0 11 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_cash.js
+
+# >>> 京喜签到 {00:11}
+京喜签到 = type=cron, cronexp="30 11 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jx_sign.js
 
 # >>> 领京豆额外奖励 {07:10}
 # >>>>> 活动入口：首页--领京豆
