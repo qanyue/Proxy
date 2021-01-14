@@ -1,5 +1,5 @@
 #!name=京东领豆任务合集 (Gitee)
-#!desc=该模块收集并整理了当前所有关于 “京东” 相关的脚本，脚本地址使用 Gitee 地址，该模块仅仅作为紧急情况下使用，不会快速更新。上次更新时间：2021-01-14 09:20
+#!desc=该模块收集并整理了当前所有关于 “京东” 相关的脚本，脚本地址使用 Gitee 地址，该模块仅仅作为紧急情况下使用，不会快速更新。上次更新时间：2021-01-14 22:10
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
@@ -97,7 +97,10 @@
 京东汽车 = type=cron, cronexp="30 10 7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car.js
 
 # >>> 口袋书店
-口袋书店 = type=cron, cronexp="1 8,12,18* * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bookshop.js
+口袋书店 = type=cron, cronexp="1 8,12,18 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bookshop.js
+
+# >>> 京东家庭号
+京东家庭号 = type=cron, cronexp="0 15 */7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_family.js
 
 # > 临时活动
 # >>> 京东年货节 (01-09 ~ 02-09)
