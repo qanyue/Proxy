@@ -131,28 +131,28 @@
           {
             "id": "jd_fruit1",
             "name": "账号一 好友互助码1",
-            "val": "73b9c21c192948c6b9202303439510d2",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东农场互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd_fruit2",
             "name": "账号一 好友互助码2",
-            "val": "261bf7c9af4c4c249985a3ea583e55a7",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东农场互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd_fruit3",
             "name": "账号一 好友互助码3",
-            "val": "7b5f2dd4b5514226b280b702b2aab4f3",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东农场互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd_fruit4",
             "name": "账号一 好友互助码4",
-            "val": "da070d31b4954c6baf29cfb514b43f8b",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东农场互助码, 您帮该京东好友助力"
           },
@@ -166,28 +166,28 @@
           {
             "id": "jd2_fruit1",
             "name": "账号二 好友互助码1",
-            "val": "118ef90ea2be4106ab45f3ff31c2a8f1",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东农场互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd2_fruit2",
             "name": "账号二 好友互助码2",
-            "val": "261bf7c9af4c4c249985a3ea583e55a7",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东农场互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd2_fruit3",
             "name": "账号二 好友互助码3",
-            "val": "7b5f2dd4b5514226b280b702b2aab4f3",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东农场互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd2_fruit4",
             "name": "账号二 好友互助码4",
-            "val": "274db540fc5a4ffba132182e8c895ee1",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东农场互助码, 您帮该京东好友助力"
           }
@@ -231,35 +231,35 @@
           {
             "id": "jd_pet1",
             "name": "账号一 好友互助码1",
-            "val": "MTE1NDQ5OTIwMDAwMDAwMzY1OTM3NzM=",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东萌宠互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd_pet2",
             "name": "账号一 好友互助码2",
-            "val": "MTAxODc2NTEzMjAwMDAwMDAyNzA4MjkwNw==",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东萌宠互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd_pet3",
             "name": "账号一 好友互助码3",
-            "val": "MTAxODc2NTEzNDAwMDAwMDAzMDY0OTU3NQ==",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东萌宠互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd_pet4",
             "name": "账号一 好友互助码4",
-            "val": "MTEzMzI0OTE0NTAwMDAwMDAzNTQ2ODA0MQ==",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东萌宠互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd_pet5",
             "name": "账号一 好友互助码5",
-            "val": "MTE1NDAxNzgwMDAwMDAwMzU0NDkxNzE=",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东萌宠互助码, 您帮该京东好友助力"
           },
@@ -273,35 +273,35 @@
           {
             "id": "jd2_pet1",
             "name": "账号二 好友互助码1",
-            "val": "MTAxODc2NTEzNTAwMDAwMDAyNzQ1OTEzOQ==",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东萌宠互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd2_pet2",
             "name": "账号二 好友互助码2",
-            "val": "MTAxODc2NTEzNDAwMDAwMDAzMDY0OTU3NQ==",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东萌宠互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd2_pet3",
             "name": "账号二 好友互助码3",
-            "val": "MTAxODc2NTEzMjAwMDAwMDAyNzA4MjkwNw==",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东萌宠互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd2_pet4",
             "name": "账号二 好友互助码4",
-            "val": "MTEzMzI0OTE0NTAwMDAwMDAzNTQ2ODA0MQ==",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东萌宠互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd2_pet5",
             "name": "账号二 好友互助码5",
-            "val": "MTE1NDAxNzgwMDAwMDAwMzU0NDkxNzE=",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的东东萌宠互助码, 您帮该京东好友助力"
           }
@@ -341,21 +341,21 @@
           {
             "id": "jd_plantBean1",
             "name": "账号一 好友互助码1",
-            "val": "iu237u55hwjiobiy5l2ouqbrmuay6e3tf5t45xq",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的种豆得豆互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd_plantBean2",
             "name": "账号一 好友互助码2",
-            "val": "sptv55gzcksfquzoq5k2ubuj4i",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的种豆得豆互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd_plantBean3",
             "name": "账号一 好友互助码3",
-            "val": "olmijoxgmjutyw3xraw4bu7jkcdvszaezqfffiq",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的种豆得豆互助码, 您帮该京东好友助力"
           },
@@ -369,21 +369,21 @@
           {
             "id": "jd2_plantBean1",
             "name": "账号二 好友互助码1",
-            "val": "olmijoxgmjutyw3xraw4bu7jkcdvszaezqfffiq",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的种豆得豆互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd2_plantBean2",
             "name": "账号二 好友互助码2",
-            "val": "sptv55gzcksfquzoq5k2ubuj4i",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的种豆得豆互助码, 您帮该京东好友助力"
           },
           {
             "id": "jd2_plantBean3",
             "name": "账号二 好友互助码3",
-            "val": "mlrdw3aw26j3xnp6oj2azes26laj5dwiyn5wdxa",
+            "val": "",
             "type": "text",
             "desc": "填写京东好友的种豆得豆互助码, 您帮该京东好友助力"
           }
